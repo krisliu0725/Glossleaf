@@ -1,0 +1,71 @@
+{
+  "format": "jian-reading/1",
+  "items": [
+    {
+      "item": {
+        "id": "b0492b4d-ffc8-4b44-945b-9949796e62b6",
+        "type": "document",
+        "title": "fixture"
+      },
+      "annotations": [
+        {
+          "id": "95a672ee-a135-47a0-8055-dcf05422bf30",
+          "documentVersionId": "248d9e23-6b62-46d3-8561-640f1f3b8db0",
+          "type": "excerpt",
+          "quote": "river bank",
+          "translation": "河岸与能源",
+          "comment": "外交与能源 reading note",
+          "anchors": [
+            {
+              "documentVersionId": "248d9e23-6b62-46d3-8561-640f1f3b8db0",
+              "pageIndex": 0,
+              "rects": [
+                [
+                  50,
+                  580,
+                  300,
+                  600
+                ]
+              ],
+              "exact": "river bank"
+            }
+          ],
+          "createdAt": "2026-10-29T06:22:30.474Z"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "c8ebf46d-72af-48fd-a212-b01d700629c1",
+        "type": "article-journal",
+        "title": "外交与能源：An Evidence-Based Study",
+        "container-title": "研究方法",
+        "volume": "8",
+        "issue": "2",
+        "page": "10-20",
+        "DOI": "10.1234/jian-fixture",
+        "URL": "https://doi.org/10.1234/jian-fixture",
+        "language": "zh-CN",
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              29
+            ]
+          ]
+        },
+        "author": [
+          {
+            "family": "张",
+            "given": "明"
+          },
+          {
+            "literal": "Institute for Evidence"
+          }
+        ]
+      },
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+/* 设计 token —— 严格取自 DESIGN.md §6.4，另加本应用的结构性变量。
+   改动任何色值前请先对照 §6.1 的对比度要求。 */
+
+:root {
+  color-scheme: light;
+
+  /* 表面 */
+  --surface: #f8f7f3;
+  --surface-sunken: #f0eee8;
+  --surface-raised: #fffefb;
+
+  /* 文字 */
+  --text-primary: #22221f;
+  --text-secondary: #53554f;
+  --text-muted: #656860;
+
+  /* 语义 */
+  --accent: #913e32;
+  --danger: #9b362c;
+
+  /* 五色：朱、墨、青、黄、米 —— 用于区分功能而不只是装饰 */
+  --ink: #22221f;
+  --vermilion: #9b3b2e;
+  --azure: #3d6b66;
+  --ochre: #a8791f;
+  --rice: #f3efe4;
+  --rice-deep: #e8e1cf;
+  --azure-soft: rgba(61, 107, 102, 0.12);
+  --ochre-soft: rgba(168, 121, 31, 0.16);
+  --vermilion-soft: rgba(155, 59, 46, 0.12);
+
+  /* 线 */
+  --line: #dadbd3;
+  --control-line: #777d71;
+
+  /* 交互态 */
+  --hover: #eeede6;
+  --selected: #e5e6dc;
+  --selection: rgba(145, 62, 50, 0.18);
+  --focus: var(--text-primary);
+
+  --shadow-popover: 0 8px 24px rgba(22, 25, 19, 0.12);
+
+  /* 字体 */
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Source Han Sans SC', 'PingFang SC', sans-serif;
+  --font-editorial: 'Source Han Serif SC', 'Songti SC', serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* 间距 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* 形状 */
+  --radius-control: 5px;
+  --radius-popover: 8px;
+  --radius-dialog: 12px;
+
+  /* 结构 */
+  --toolbar-height: 56px;
+  --reader-toolbar-height: 52px;
+  --sidebar-width: 224px;
+  --detail-width: 336px;
+
+  /* 动效 */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-state: 120ms;
+  --dur-panel: 180ms;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --surface: #1b1d1a;
+  --surface-sunken: #151714;
+  --surface-raised: #232620;
+
+  --text-primary: #e9ebe4;
+  --text-secondary: #b8bcb1;
+  --text-muted: #a0a69a;
+
+  --accent: #e8a28f;
+  --danger: #f0a599;
+
+  --ink: #e9ebe4;
+  --vermilion: #e8a28f;
+  --azure: #86b8b0;
+  --ochre: #d6b062;
+  --rice: #23261f;
+  --rice-deep: #2c3027;
+  --azure-soft: rgba(134, 184, 176, 0.16);
+  --ochre-soft: rgba(214, 176, 98, 0.18);
+  --vermilion-soft: rgba(232, 162, 143, 0.18);
+
+  --line: #3d4238;
+  --control-line: #858d7d;
+
+  --hover: #292e25;
+  --selected: #353d2f;
+  --selection: rgba(232, 162, 143, 0.25);
+  --focus: var(--text-primary);
+
+  --shadow-popover: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+::selection {
+  background: var(--selection);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* M5 controls and quiet reusable panels. */
+:root {
+  --control-height: 34px;
+  --control-height-small: 30px;
+  --card-radius: 10px;
+  --shadow-dialog: 0 16px 56px rgba(22, 25, 19, .16);
+}
+:root[data-theme='dark'] { --shadow-dialog: 0 16px 56px rgba(0, 0, 0, .4); }

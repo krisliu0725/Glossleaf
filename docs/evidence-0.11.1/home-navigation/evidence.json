@@ -1,0 +1,47 @@
+{
+  "checks": [
+    "Reader to Memoir commits draft; all five Settings sections remain scrollable; Library returns to existing document session"
+  ],
+  "layouts": [
+    {
+      "label": "通用",
+      "height": 600,
+      "scrollHeight": 1239,
+      "scrollTop": 639.5,
+      "overflow": "auto"
+    },
+    {
+      "label": "阅读与外观",
+      "height": 600,
+      "scrollHeight": 1592,
+      "scrollTop": 991.5,
+      "overflow": "auto"
+    },
+    {
+      "label": "翻译",
+      "height": 600,
+      "scrollHeight": 1128,
+      "scrollTop": 528,
+      "overflow": "auto"
+    },
+    {
+      "label": "书府与备份",
+      "height": 600,
+      "scrollHeight": 717,
+      "scrollTop": 116.5,
+      "overflow": "auto"
+    },
+    {
+      "label": "高级与诊断",
+      "height": 600,
+      "scrollHeight": 611,
+      "scrollTop": 11,
+      "overflow": "auto"
+    }
+  ],
+  "screens": [
+    "settings-navigation-audited"
+  ],
+  "paidModelCalls": 0,
+  "personalLibraryModified": false
+}

@@ -1,0 +1,19 @@
+{
+  "version": "0.3.1",
+  "date": "2026-10-29",
+  "checks": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "automated_tests": {
+      "passed": 15,
+      "failed": 0
+    },
+    "electron_compatible_normal": "passed",
+    "electron_google_rotated_cropbox": "passed",
+    "custom_model_saved": "passed",
+    "draft_translation_and_model_discovery": "passed",
+    "settings_save_action_visible": "passed"
+  },
+  "translation_service": "local deterministic fixtures for compatible and Google native protocols; no real credentials",
+  "scope": "M3 + user-adjustable API; complex-paper quality and real-provider latency remain unverified"
+}

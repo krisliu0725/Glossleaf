@@ -1,0 +1,150 @@
+{
+  "snapshot": {
+    "ok": true,
+    "data": {
+      "generatedAt": "2026-10-29T06:51:49.654Z",
+      "range": "30",
+      "timezone": "Asia/Shanghai",
+      "settings": {
+        "enabled": true,
+        "trackingSince": "2026-10-29T06:51:49.371Z"
+      },
+      "reading": {
+        "activeMs": 0,
+        "sessions": 0,
+        "documents": 0,
+        "uniquePages": 0,
+        "pageVisits": 0,
+        "uniqueVisitedCharacters": 0,
+        "uniqueVisitedWords": 0,
+        "visitedCharacters": 0,
+        "visitedWords": 0,
+        "pagesWithText": 0
+      },
+      "readingDocuments": [],
+      "tokens": {
+        "inputTokens": null,
+        "outputTokens": null,
+        "totalTokens": null,
+        "cachedInputTokens": null,
+        "reasoningTokens": null,
+        "attempts": 0,
+        "completed": 0,
+        "failed": 0,
+        "cancelled": 0,
+        "reportedAttempts": 0,
+        "unknownAttempts": 0,
+        "estimatedInputTokens": 0,
+        "estimatedOutputTokens": 0
+      },
+      "models": [],
+      "purposes": [],
+      "trend": [
+        {
+          "day": "2026-10-29",
+          "activeMs": 0,
+          "pageVisits": 0,
+          "totalTokens": 0,
+          "unknownAttempts": 0
+        }
+      ],
+      "library": {
+        "items": 0,
+        "documents": 0,
+        "managedBytes": 0,
+        "indexedPages": 0,
+        "indexedDocuments": 0,
+        "pendingDocuments": 0,
+        "failedDocuments": 0,
+        "annotations": 0,
+        "comments": 0,
+        "notes": 0,
+        "translations": 0,
+        "glossaryTerms": 0,
+        "cachedTranslations": 0
+      },
+      "activity": {
+        "annotations": 0,
+        "comments": 0,
+        "translations": 0,
+        "imports": 0,
+        "exports": 0,
+        "errors": 0,
+        "cacheHits": 0,
+        "searches": 0,
+        "jobsCompleted": 0,
+        "jobsFailed": 0
+      },
+      "topics": [],
+      "fields": [],
+      "notices": [
+        "阅读时长仅计入窗口聚焦、系统未闲置且阅读器持续心跳的采样区间；不代表持续注视或理解。",
+        "字数/词数是访问页可提取文本的代理值；不等于实际逐字阅读。扫描页未索引时计为未知。",
+        "Token 仅累计服务返回的用量；未返回保持未知。估算值单独列出，不用于计费。",
+        "话题/领域优先使用用户确认分类；未分类文献分别以标签/集合为代理，不自动推断。",
+        "概览的文库存量包含历史数据；期间活动与网络用量只统计启用后的本机记录。"
+      ]
+    }
+  },
+  "modelText": "笺 · 使用概览\n\n模型用量\n最近 7 天\n最近 30 天\n最近 90 天\n自开始记录\n刷新\n导出完整数据\n最近 30 天 · Asia/Shanghai\n数据口径与来源 ↗\n模型用量\n用量口径 ↗\n输入 Token\n—\n输出 Token\n—\n未回传请求\n0 / 0 次\n账单金额\n暂无账单数据\n尚无模型请求记录\n原文阅读无需配置模型。服务端回传用量后才会显示实际 Token。\n查看文本估算与细分字段\n记录已开启，仅保存在本机\n更新于 14:51:49\n查看数据覆盖说明",
+  "modalInert": true,
+  "exportRows": 0,
+  "navigation": {
+    "nav": 760,
+    "viewport": 760,
+    "buttons": [
+      {
+        "right": 54,
+        "text": "总览"
+      },
+      {
+        "right": 136,
+        "text": "阅读记录"
+      },
+      {
+        "right": 218,
+        "text": "研究方向"
+      },
+      {
+        "right": 300,
+        "text": "模型用量"
+      }
+    ]
+  },
+  "overflow": {
+    "page": false,
+    "body": false
+  },
+  "diagnostics": {
+    "ok": true,
+    "data": {
+      "generatedAt": "2026-10-29T06:51:50.825Z",
+      "appVersion": "45.1.0",
+      "platform": "darwin",
+      "architecture": "arm64",
+      "electron": "45.1.0",
+      "node": "24.22.1",
+      "schemaVersion": 4,
+      "serviceReady": true,
+      "rendererCount": 1,
+      "memory": {
+        "workingSetKb": 0,
+        "privateKb": 49393
+      },
+      "index": {
+        "total": 0,
+        "completed": 0,
+        "failed": 0,
+        "pages": 0
+      },
+      "scope": "应用状态摘要；不包含文件路径、文献正文、API Key、端点或使用明细"
+    }
+  },
+  "preferences": {
+    "ok": true,
+    "data": {
+      "theme": "dark",
+      "dark": true
+    }
+  }
+}

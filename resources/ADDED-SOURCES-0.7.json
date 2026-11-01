@@ -1,0 +1,37 @@
+[
+  {
+    "file": "resources/csl/apa.csl",
+    "source": "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl",
+    "sha256": "3917def5fc951b104d64216c3373096042368b9704ba269ca83c14ebaba889fc"
+  },
+  {
+    "file": "resources/csl/modern-language-association.csl",
+    "source": "https://raw.githubusercontent.com/citation-style-language/styles/master/modern-language-association.csl",
+    "sha256": "e1432698ef28938d044b06bd45ddcc57d6b974cec25f71007075646a11f99484"
+  },
+  {
+    "file": "resources/csl/chicago-author-date.csl",
+    "source": "https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl",
+    "sha256": "002fade78d7e4fe9d42936a16b43a8066b097013f6255df40b1bfba6631eff9b"
+  },
+  {
+    "file": "resources/csl/ieee.csl",
+    "source": "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl",
+    "sha256": "b4c7619fc16c45a31e4cc3271eab94ffe83192d3b4c7fc729470a3b459448de3"
+  },
+  {
+    "file": "src/renderer/src/design/fonts/SourceSerif4-Regular.otf",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/OTF/SourceSerif4-Regular.otf",
+    "sha256": "edf160d0d584deee8a3bb2c3371b2a7624ca63580fbe02c57c1f4c91e84d8787"
+  },
+  {
+    "file": "src/renderer/src/design/fonts/SourceSerif4-Semibold.otf",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/OTF/SourceSerif4-Semibold.otf",
+    "sha256": "25e034392847d9965c92f98971b3646436b7ab919ece9118b0c0e5ec94c02efc"
+  },
+  {
+    "file": "resources/licenses/SourceSerif-OFL.txt",
+    "source": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/LICENSE.md",
+    "sha256": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464"
+  }
+]

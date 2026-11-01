@@ -1,0 +1,76 @@
+/* The same quiet paper-and-ink system, with language-specific typesetting. */
+:root[data-locale='en'] {
+ --font-editorial: var(--font-ui);
+}
+:root[data-locale='en'] .toolbar__title {font-size:21px;letter-spacing:.015em}
+:root[data-locale='en'] .segmented button {letter-spacing:0;font-size:12px;padding-inline:12px;white-space:nowrap}
+:root[data-locale='zh'] .toolbar>.segmented button {letter-spacing:.12em;padding-inline:14px}
+:root[data-locale='en'] .sidebar__group-label {font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+:root[data-locale='en'] .sidebar__row {line-height:1.5}
+:root[data-locale='en'] .dash-heading h1 {letter-spacing:-.025em;line-height:1.2}
+:root[data-locale='en'] .dash-metric__head h2 {line-height:1.45;max-width:26ch}
+:root[data-locale='en'] .dash-metric__head {align-items:flex-start;gap:8px}
+:root[data-locale='en'] .dash-metric__head button {flex:none;max-width:14ch;font-size:10px;text-align:right;line-height:1.5}
+:root[data-locale='en'] .dash-metric__value {letter-spacing:-.035em;display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
+:root[data-locale='en'] .dash-metric__value>span {letter-spacing:0;font-size:11px;line-height:1.5}
+:root[data-locale='en'] .dash-metric__description {line-height:1.65}
+:root[data-locale='en'] .dash-section__note {line-height:1.7;max-width:94ch}
+:root[data-locale='en'] .dash-sidebar__seal-note {letter-spacing:0;line-height:1.65;max-width:18ch}
+:root[data-locale='en'] .heatmap__axis {width:23px}
+:root[data-locale='en'] .heatmap__legend {padding-left:31px}
+:root[data-locale='en'] .library-menu {width:210px}
+:root[data-locale='en'] .library-search select {max-width:107px;min-width:76px}
+:root[data-locale='en'] .library-search .search {font-size:12px}
+:root[data-locale='en'] .m3-dialog {width:min(620px,calc(100vw - 32px))}
+:root[data-locale='en'] .modal__header h2 {font-size:23px;line-height:1.3;letter-spacing:-.015em}
+:root[data-locale='en'] .modal__header {gap:16px}
+:root[data-locale='en'] .modal__header>.btn {flex:none}
+:root[data-locale='en'] .creator-row select {max-width:132px}
+:root[data-locale='en'] .m3-form label {line-height:1.5}
+:root[data-locale='en'] .m3-muted {line-height:1.7}
+:root[data-locale='en'] .provider-numbers {grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+:root[data-locale='en'] .provider-footer-content .m3-actions {flex-wrap:wrap;row-gap:8px}
+.preferences-language .locale-switch {margin:0 0 6px}
+.locale-switch {flex:none;margin-left:4px;border-radius:5px;font-size:10px;white-space:nowrap}
+.locale-switch button {min-height:25px;border-radius:3px;cursor:pointer;letter-spacing:0}
+.toolbar>.locale-switch {margin-left:4px}
+.reader-toolbar {padding-right:16px}
+.reader-toolbar .reader-title {flex:0 1 240px;min-width:0}
+.reader-toolbar .toolbar__spacer {min-width:0}
+:root[data-locale='en'] .reader-toolbar {flex-wrap:wrap;height:auto;min-height:var(--toolbar-height);padding-block:9px;gap:7px}
+:root[data-locale='en'] .reader-toolbar .reader-title {max-width:150px}
+:root[data-locale='en'] .reader-toolbar .btn {font-size:11px;white-space:nowrap;padding:5px 8px}
+:root[data-locale='en'] .reader-toolbar .segmented button {font-size:11px;padding-inline:8px}
+:root[data-locale='en'] .translation-tools .m3-actions {gap:6px;flex-wrap:wrap}
+:root[data-locale='en'] .inline-mode-tools {align-items:flex-start;line-height:1.65}
+:root[data-locale='en'] .inline-paragraph-marker {font-size:9px;width:28px;white-space:nowrap}
+:root[data-locale='en'] .inline-insertion__label {flex-wrap:wrap;gap:8px}
+:root[data-locale='en'] .selection-panel {width:min(640px,calc(100vw - 32px));overflow-wrap:anywhere}
+:root[data-locale='en'] .dash-usage-summary>div {min-width:0}
+:root[data-locale='en'] .dash-unavailable {font-size:14px;line-height:1.45}
+.btn {overflow-wrap:normal}
+@media(max-width:1150px) {
+ :root[data-locale='en'] .reader-toolbar .reader-title {display:none}
+ :root[data-locale='en'] .reader-toolbar .toolbar__spacer {display:none}
+ :root[data-locale='en'] .reader-toolbar {row-gap:7px}
+}
+@media(max-width:1000px) {
+ :root[data-locale='en'] .dash-metrics {grid-template-columns:repeat(2,minmax(0,1fr))}
+ :root[data-locale='en'] .library-heading__count {display:none}
+ :root[data-locale='en'] .library-heading__title {font-size:12px}
+ :root[data-locale='en'] .library-header__actions .btn {padding-inline:7px}
+ :root[data-locale='en'] .dash-heading__actions {flex-wrap:wrap;justify-content:flex-start}
+ :root[data-locale='en'] .reader-toolbar {padding-right:12px}
+}
+@media(max-width:760px) {
+ :root[data-locale='en'] .toolbar {gap:5px;padding-right:10px}
+ :root[data-locale='en'] .toolbar>.segmented button {padding-inline:7px;font-size:11px}
+ :root[data-locale='en'] .toolbar>.toolbar__title {display:none}
+ :root[data-locale='en'] .dash-metric__value {font-size:29px}
+ :root[data-locale='en'] .dash-metric__head {min-height:42px}
+ :root[data-locale='en'] .dash-sidebar .sidebar__row {font-size:11px;padding-right:8px}
+ :root[data-locale='en'] .reader-toolbar {padding-left:96px}
+}
+:root[data-locale='en'] .dash-metric__head {min-height:36px}
+:root[data-locale='en'] .dash-metric__head button {white-space:nowrap}
+:root[data-locale='en'] .sidebar__footer p {overflow-wrap:normal}

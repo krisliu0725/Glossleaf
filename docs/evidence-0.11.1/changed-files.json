@@ -1,0 +1,17 @@
+[
+  "src/renderer/src/App.tsx",
+  "src/renderer/src/design/interaction-audit.css",
+  "src/renderer/src/main.tsx",
+  "src/renderer/src/reader/AnnotationTools.tsx",
+  "src/renderer/src/reader/PageLocator.tsx",
+  "src/renderer/src/reader/ReaderTabs.tsx",
+  "src/renderer/src/reader/motion.ts",
+  "src/renderer/src/reader/session.ts",
+  "src/renderer/src/views/ReaderView.tsx",
+  "scripts/README.md",
+  "scripts/glossleaf-fusion-geometry.cjs",
+  "scripts/glossleaf-home-navigation-e2e.cjs",
+  "scripts/glossleaf-interaction-audit-e2e.cjs",
+  "scripts/glossleaf-package-smoke.cjs",
+  "scripts/glossleaf-reading-desk-e2e.cjs"
+]

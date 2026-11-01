@@ -1,0 +1,29 @@
+{
+  "retrievedAt": "2026-10-29",
+  "files": [
+    {
+      "file": "gbt7714-2015-numeric.csl",
+      "sha256": "d9cd04f94bc21a99dc320d0a2230d5a1fb47e3634c17c5820cf975c40db3c0c7",
+      "license": "CC-BY-SA-3.0",
+      "modified": false
+    },
+    {
+      "file": "locales-en-US.xml",
+      "sha256": "ac864c7c21166b4390d82c31792cdc509400727fa0060b43d8aa17e07f9cb079",
+      "license": "CC-BY-SA-3.0",
+      "modified": false
+    },
+    {
+      "file": "locales-zh-CN.xml",
+      "sha256": "95cebc667f2da8fb5b9864e49941e3f867d59f79feba929bc58e8ed6bfd4d582",
+      "license": "CC-BY-SA-3.0",
+      "modified": false
+    }
+  ],
+  "processor": {
+    "name": "citeproc-js",
+    "version": "2.4.63",
+    "selectedLicense": "CPAL-1.0",
+    "sourceSha256": "55abba1a8b8b48c14323fd053f9646013b4b7a0c977938064ecf5195a502b9f1"
+  }
+}

@@ -1,0 +1,59 @@
+/* Jian Brand Tokens v1.0 · Visual identity only, NOT page layout. */
+:root {
+  color-scheme: light;
+  /* Paper and ink: the structural foundation. */
+  --jian-paper: #F8F7F3;
+  --jian-paper-inset: #F0EEE8;
+  --jian-paper-raised: #FFFEFB;
+  --jian-ink: #22221F;
+  --jian-ink-secondary: #53554F;
+  --jian-ink-muted: #656860;
+  --jian-rule: #DADBD3;
+  --jian-control-line: #777D71;
+  /* Accents are semantic, not one color per navigation area. */
+  --jian-vermilion: #913E32;
+  --jian-vermilion-soft: #F7EBE7;
+  --jian-teal: #386874;
+  --jian-teal-soft: #E9F1F0;
+  --jian-ochre: #B78D3B;
+  --jian-ochre-ink: #8D6A22; /* for small text on light paper */
+  --jian-ochre-soft: #F7EDCE;
+  --jian-danger: #9B362C;
+  --jian-focus: var(--jian-ink);
+  /* Color roles, no page-specific selectors. */
+  --jian-role-library: var(--jian-ink);
+  --jian-role-reader: var(--jian-ink);
+  --jian-role-translation: var(--jian-teal);
+  --jian-role-excerpts: var(--jian-ochre-ink);
+  --jian-role-notes: var(--jian-vermilion);
+  --jian-role-search: var(--jian-ink);
+  --jian-surface: var(--jian-paper);
+  --jian-text: var(--jian-ink);
+  --jian-selection: rgba(145,62,50,.18);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --jian-paper: #1B1D1A;
+  --jian-paper-inset: #151714;
+  --jian-paper-raised: #232620;
+  --jian-ink: #E9EBE4;
+  --jian-ink-secondary: #B8BCB1;
+  --jian-ink-muted: #A0A69A;
+  --jian-rule: #3D4238;
+  --jian-control-line: #858D7D;
+  --jian-vermilion: #E8A28F;
+  --jian-vermilion-soft: #4A2F2A;
+  --jian-teal: #9BCBD0;
+  --jian-teal-soft: #263A3D;
+  --jian-ochre: #E5C67A;
+  --jian-ochre-ink: #E5C67A;
+  --jian-ochre-soft: #43391F;
+  --jian-danger: #F0A599;
+  --jian-focus: var(--jian-ink);
+  --jian-selection: rgba(232,162,143,.25);
+}
+/* Choose SVG stroke via CSS color; SVG shapes use currentColor. */
+.jian-icon { width: 1.25rem; height: 1.25rem; color: var(--jian-ink); }
+.jian-icon[data-role="translation"] { color: var(--jian-role-translation); }
+.jian-icon[data-role="excerpts"] { color: var(--jian-role-excerpts); }
+.jian-icon[data-role="notes"] { color: var(--jian-role-notes); }

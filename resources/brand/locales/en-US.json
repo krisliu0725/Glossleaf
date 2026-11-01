@@ -1,0 +1,53 @@
+{
+  "brand": "Jian",
+  "areas": {
+    "library": "Library",
+    "reader": "Reader"
+  },
+  "features": {
+    "bilingual": "Bilingual Reading",
+    "excerpts": "Excerpts",
+    "notes": "Notes",
+    "search": "Search"
+  },
+  "secondary": {
+    "collections": "Collections",
+    "translate": "Translate",
+    "glossary": "Glossary",
+    "details": "Details",
+    "citations": "Citations",
+    "import": "Import",
+    "backup": "Backup & Restore",
+    "interlinear": "Inline Translation"
+  },
+  "standard": {
+    "allItems": "All References",
+    "recentlyAdded": "Recently Added",
+    "unfiled": "Unfiled",
+    "trash": "Trash",
+    "original": "Original",
+    "bilingualMode": "Bilingual",
+    "translatePage": "Translate Page",
+    "translateSelection": "Translate Selection",
+    "highlight": "Highlight",
+    "saveExcerpt": "Save Excerpt",
+    "addNote": "Add Note",
+    "backToSource": "Back to Original",
+    "copyCitation": "Copy Citation",
+    "importPdf": "Import PDF",
+    "importZotero": "Import from Zotero",
+    "settings": "Settings",
+    "readingAppearance": "Reading & Appearance",
+    "translationSettings": "Translation",
+    "libraryBackup": "Library & Backup",
+    "advancedDiagnostics": "Advanced & Diagnostics",
+    "needsReview": "Needs Review",
+    "resume": "Resume",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "paused": "Paused",
+    "backupNow": "Back Up Now",
+    "restoreBackup": "Restore Backup",
+    "newCollection": "New Collection"
+  }
+}

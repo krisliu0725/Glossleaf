@@ -1,0 +1,8 @@
+/* Apply to app root or a brand selector; changes logo only, not document annotation colors. */
+.glossleaf-mark { display:inline-flex; width:20px; height:20px; flex:none; }
+.glossleaf-mark svg { display:block; width:100%; height:100%; overflow:visible; }
+.glossleaf-lockup { display:inline-flex; align-items:center; gap:8px; min-height:32px; }
+.glossleaf-wordmark { color:var(--glossleaf-wordmark,#22221F); }
+:root { --glossleaf-wordmark:#22221F; }
+:root[data-theme="dark"] { --glossleaf-wordmark:#E9EBE4; }
+/* IMPORTANT: Do not alter user highlight/annotation colors when changing logo preset. */

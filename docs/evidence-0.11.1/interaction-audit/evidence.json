@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "native pointer: compact close button isolation; side editor stays open on outside click; colour/autosave serializes one annotation; side-tab change commits first",
+    "slow-save B/A clicks honour latest intent; rapid CtrlTab cycles requested tabs; only current Reader mounted",
+    "keyboard focus survives asynchronous tab replacement; note-close never overrides manual scroll; multiple queued closes complete without cross-document save",
+    "delayed reading:get cannot override newer manual page navigation",
+    "direct wheel cancels the paragraph-synchronisation tween",
+    "reduced-motion disables surface animation; no document layout translation"
+  ],
+  "layouts": [
+    {
+      "closeShape": {
+        "width": 24,
+        "height": 24,
+        "border": "0px",
+        "tabWidth": 244.796875,
+        "active": 0,
+        "role": "navigation"
+      }
+    },
+    {
+      "cancelled": {
+        "before": 111,
+        "after": 111
+      }
+    }
+  ],
+  "screens": [
+    "library-tabs-clean",
+    "audited-reader"
+  ],
+  "paidModelCalls": 0,
+  "personalLibraryModified": false
+}

@@ -1,0 +1,29 @@
+{
+  "isolated": {
+    "inert": true,
+    "focused": true,
+    "dialogs": 1
+  },
+  "focusRestored": true,
+  "collections": {
+    "ok": true,
+    "data": [
+      {
+        "id": "4d8edd3e-3b3d-4dc8-b515-83b121157ff0",
+        "name": "M5 fixture collection",
+        "parentId": null,
+        "itemCount": 0
+      }
+    ]
+  },
+  "selection": {
+    "current": 0,
+    "checked": 1
+  },
+  "latestQuery": "fast",
+  "compact": {
+    "left": 160,
+    "right": 700,
+    "width": 700
+  }
+}

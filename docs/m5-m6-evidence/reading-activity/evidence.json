@@ -1,0 +1,7 @@
+{
+  "sensors": "focus and idle controlled for unattended CI; native visibility/minimize and application modal remain real",
+  "activeMs": 9891,
+  "modalDelta": 0,
+  "minimizedDelta": 0,
+  "libraryDelta": 0
+}

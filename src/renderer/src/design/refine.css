@@ -1,0 +1,705 @@
+/* 本轮细化：五色运用、侧栏交互感、热力图、检索高亮。
+   放在 global.css 之后加载，只做覆盖与新增，不改原文件里的既有规则。 */
+
+/* ---------- 侧栏：分组边界与点击感 ---------- */
+
+.sidebar {
+  position: relative;
+}
+
+/* 分组标题上方加一条极细分隔，让「集」「签」的层级一眼可辨 */
+.sidebar__group-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 8px 10px 4px;
+  border-top: 1px solid var(--line);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-transform: none;
+}
+
+.sidebar__group-label:first-of-type {
+  border-top: 0;
+  margin-top: 6px;
+}
+
+/* 每一行：左侧留出图标位，右侧计数对齐；悬停有底、选中左侧起朱线 */
+.sidebar__row {
+  position: relative;
+  min-height: 30px;
+  padding-left: 28px;
+  border-radius: 4px;
+  transition: background 120ms var(--ease), color 120ms var(--ease);
+}
+
+.sidebar__row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 0;
+  background: var(--vermilion);
+  border-radius: 2px;
+  transition: height 140ms var(--ease);
+}
+
+.sidebar__row:hover {
+  background: var(--hover);
+}
+
+.sidebar__row[aria-current='true'],
+.sidebar__row[aria-current='page'] {
+  background: var(--rice);
+  color: var(--text-primary);
+}
+
+.sidebar__row[aria-current='true']::before,
+.sidebar__row[aria-current='page']::before {
+  height: 16px;
+}
+
+/* 图标槽 */
+.sidebar__icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  display: block;
+  color: var(--text-muted);
+  transition: color 120ms var(--ease);
+}
+
+.sidebar__row:hover .sidebar__icon,
+.sidebar__row[aria-current='true'] .sidebar__icon,
+.sidebar__row[aria-current='page'] .sidebar__icon {
+  color: var(--vermilion);
+}
+
+.sidebar__row--tag .sidebar__icon {
+  color: var(--ochre);
+  opacity: 0.75;
+}
+
+.sidebar__count {
+  font-variant-numeric: tabular-nums;
+  font-size: 10px;
+  color: var(--text-muted);
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.sidebar__row[aria-current='true'] .sidebar__count,
+.sidebar__row[aria-current='page'] .sidebar__count {
+  background: var(--rice-deep);
+  color: var(--text-secondary);
+}
+
+/* ---------- 使用概览侧栏：消灭大片空白 ---------- */
+
+/* 原布局把 footer 顶到最底，中间留出一大块空。改为内容自然收束，
+   空白处放一条竖直的朱色细线与「笺」印记，作为版面呼吸而不是空洞。 */
+.dash-sidebar {
+  justify-content: flex-start;
+}
+
+.dash-sidebar__footer {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.dash-sidebar__seal {
+  margin: auto 10px 18px;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.dash-sidebar__seal::before {
+  content: '';
+  width: 1px;
+  height: 64px;
+  background: linear-gradient(to bottom, var(--line), transparent);
+}
+
+.dash-sidebar__seal-mark {
+  font-family: var(--font-editorial);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--vermilion);
+  opacity: 0.28;
+  letter-spacing: 0.08em;
+}
+
+.dash-sidebar__seal-note {
+  font-size: 10px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- 热力图 ---------- */
+
+.heatmap {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.heatmap__svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.heatmap__month {
+  font: 10px var(--font-ui);
+  fill: var(--text-muted);
+}
+
+.heatmap__weekday {
+  font: 9px var(--font-ui);
+  fill: var(--text-muted);
+}
+
+.heatmap__cell {
+  transition: opacity 100ms var(--ease);
+}
+
+.heatmap__cell:hover {
+  opacity: 0.72;
+}
+
+.heatmap__cell--l0 {
+  fill: var(--rice-deep);
+  background: var(--rice-deep);
+}
+
+.heatmap__cell--l1 {
+  fill: color-mix(in srgb, var(--vermilion) 18%, var(--rice));
+  background: color-mix(in srgb, var(--vermilion) 18%, var(--rice));
+}
+
+.heatmap__cell--l2 {
+  fill: color-mix(in srgb, var(--vermilion) 36%, var(--rice));
+  background: color-mix(in srgb, var(--vermilion) 36%, var(--rice));
+}
+
+.heatmap__cell--l3 {
+  fill: color-mix(in srgb, var(--vermilion) 62%, var(--rice));
+  background: color-mix(in srgb, var(--vermilion) 62%, var(--rice));
+}
+
+.heatmap__cell--l4 {
+  fill: var(--vermilion);
+  background: var(--vermilion);
+}
+
+.heatmap__legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: var(--text-muted);
+  padding-bottom: 2px;
+}
+
+.heatmap__swatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 2.5px;
+  display: inline-block;
+}
+
+.heatmap__legend span {
+  margin: 0 3px;
+}
+
+/* ---------- 研究方向：单列标签排行 ---------- */
+
+.dash-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 780px;
+}
+
+.dash-topic {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: baseline;
+  gap: 4px 14px;
+  padding: 11px 12px 11px 14px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  background: none;
+  border-left: 2px solid transparent;
+  text-align: left;
+  width: 100%;
+  transition: background 120ms var(--ease), border-color 120ms var(--ease);
+}
+
+.dash-topic:hover {
+  background: var(--rice);
+  border-left-color: var(--ochre);
+}
+
+.dash-topic__name {
+  font: 500 13px var(--font-ui);
+  color: var(--text-primary);
+}
+
+.dash-topic__basis {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.dash-topic__count {
+  font: 11px var(--font-mono);
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.dash-topic__time {
+  font: 11px var(--font-mono);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 54px;
+  text-align: right;
+}
+
+.dash-topic__track {
+  grid-column: 1 / -1;
+  height: 2px;
+  background: var(--line);
+  margin-top: 7px;
+}
+
+.dash-topic__track span {
+  display: block;
+  height: 2px;
+  background: var(--ochre);
+  opacity: 0.75;
+}
+
+/* ---------- 检索高亮 ---------- */
+
+mark,
+.jian-mark {
+  background: var(--ochre-soft);
+  color: var(--ink);
+  padding: 0 2px;
+  border-radius: 2px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+:root[data-theme='dark'] mark,
+:root[data-theme='dark'] .jian-mark {
+  color: var(--text-primary);
+}
+
+/* 检索结果里被命中的词组：下划一条朱线，和普通正文区分开 */
+.jian-mark--strong {
+  background: transparent;
+  border-bottom: 1.5px solid var(--vermilion);
+  padding: 0 1px;
+  border-radius: 0;
+}
+
+/* ---------- 五色点缀 ---------- */
+
+/* 指标卡：朱色为阅读，青色为字数，黄色为页面，墨色为用量 */
+.dash-metric:nth-child(1) .dash-metric__value {
+  color: var(--vermilion);
+}
+
+.dash-metric:nth-child(2) .dash-metric__value {
+  color: var(--azure);
+}
+
+.dash-metric:nth-child(3) .dash-metric__value {
+  color: var(--ochre);
+}
+
+.dash-metric:nth-child(4) .dash-metric__value {
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] .dash-metric:nth-child(4) .dash-metric__value {
+  color: var(--text-primary);
+}
+
+/* 语言切换 */
+.locale-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 10px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 10px;
+}
+
+.locale-switch button {
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.locale-switch button[aria-pressed='true'] {
+  background: var(--rice);
+  color: var(--text-primary);
+}
+
+/* 导航项：中文古典名 + 小字英文，形成「笺」的题签感 */
+.nav-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.nav-item__en {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ---------- 检索命中：让关键词真正跳出来 ---------- */
+
+/* 原样式是 12% 朱色底，几乎看不出来。改为黄底墨字 + 下缘一道细线，
+   在密集的中文段落里也能一眼扫到命中位置。 */
+.search-hit mark {
+  background: color-mix(in srgb, var(--ochre) 32%, transparent);
+  color: var(--ink);
+  font-weight: 500;
+  padding: 1px 3px;
+  margin: 0 -1px;
+  border-radius: 2px;
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--ochre) 62%, transparent);
+}
+
+:root[data-theme='dark'] .search-hit mark {
+  background: color-mix(in srgb, var(--ochre) 34%, transparent);
+  color: var(--text-primary);
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--ochre) 70%, transparent);
+}
+
+/* 命中类型用颜色区分：文献信息=黄、正文=青、摘录=朱 */
+.search-hit__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.02em;
+}
+
+.search-hit__label::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  flex: none;
+}
+
+.search-hit[data-kind='metadata'] .search-hit__label {
+  color: var(--ochre);
+}
+
+.search-hit[data-kind='metadata'] .search-hit__label::before {
+  background: var(--ochre);
+}
+
+.search-hit[data-kind='body'] .search-hit__label {
+  color: var(--azure);
+}
+
+.search-hit[data-kind='body'] .search-hit__label::before {
+  background: var(--azure);
+}
+
+.search-hit[data-kind='excerpts'] .search-hit__label {
+  color: var(--vermilion);
+}
+
+.search-hit[data-kind='excerpts'] .search-hit__label::before {
+  background: var(--vermilion);
+}
+
+/* 命中段落的正文提一点对比，避免高亮浮在灰字上 */
+.search-hit > span:last-child {
+  color: var(--text-secondary);
+}
+
+.search-hit:hover > span:last-child {
+  color: var(--text-primary);
+}
+
+/* ---------- 月历式热力图（覆盖早先的周条实现） ---------- */
+
+.heatmap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.heatmap__months {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+  gap: 20px 22px;
+}
+
+.heatmap__month-title {
+  font: 500 11px var(--font-ui);
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin: 0 0 7px;
+}
+
+.heatmap__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 16px);
+  grid-auto-rows: 16px;
+  gap: 2px;
+}
+
+.heatmap__weekday {
+  font: 9px var(--font-ui);
+  line-height: 16px;
+  text-align: center;
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+.heatmap__cell,
+.heatmap__blank {
+  width: 16px;
+  height: 16px;
+  border-radius: 2.5px;
+  display: block;
+}
+
+.heatmap__blank {
+  background: transparent;
+}
+
+.heatmap__cell {
+  outline: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  outline-offset: -1px;
+  transition: transform 90ms var(--ease);
+}
+
+.heatmap__cell:hover {
+  transform: scale(1.18);
+  outline-color: var(--vermilion);
+}
+
+.heatmap__cell[data-future] {
+  opacity: 0.35;
+}
+
+.heatmap__legend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.heatmap__swatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+/* ---------- 个人页的账户条 ---------- */
+
+.dash-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 1240px;
+  margin: 0 auto 24px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--card-radius);
+  background: var(--surface-raised);
+}
+
+.dash-profile__avatar {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rice);
+  color: var(--vermilion);
+  font: 600 18px/1 var(--font-editorial);
+  letter-spacing: 0;
+}
+
+.dash-profile__body {
+  min-width: 0;
+}
+
+.dash-profile__name {
+  font: 600 17px/1.4 var(--font-editorial);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-profile__name input {
+  font: inherit;
+  padding: 2px 6px;
+  border: 1px solid var(--control-line);
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  color: var(--text-primary);
+  min-width: 180px;
+}
+
+.dash-profile__meta {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.dash-profile__actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  flex: none;
+}
+
+/* ---------- 连续周列热力图（覆盖月历块实现） ---------- */
+
+.heatmap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.heatmap__frame {
+  display: flex;
+  gap: 8px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.heatmap__axis {
+  position: relative;
+  width: 12px;
+  flex: none;
+  margin-top: 0;
+}
+
+.heatmap__axis span {
+  position: absolute;
+  left: 0;
+  font: 9px/11px var(--font-ui);
+  color: var(--text-muted);
+}
+
+.heatmap__plot {
+  position: relative;
+  flex: none;
+}
+
+.heatmap__grid {
+  display: grid;
+  gap: 3px;
+}
+
+.heatmap__cell {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  display: block;
+  background: var(--rice-deep);
+  transition: outline-color 90ms var(--ease);
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+}
+
+.heatmap__cell:hover {
+  outline-color: var(--vermilion);
+}
+
+.heatmap__cell[data-empty] {
+  background: transparent;
+  outline-color: color-mix(in srgb, var(--line) 60%, transparent);
+}
+
+.heatmap__months {
+  position: relative;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.heatmap__months span {
+  position: absolute;
+  top: 0;
+  font: 10px/15px var(--font-ui);
+  color: var(--text-muted);
+  white-space: nowrap;
+  transform: translateX(-2px);
+}
+
+.heatmap__legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: var(--text-muted);
+  padding-left: 20px;
+}
+
+.heatmap__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+/* 五级色阶：低饱和起步，最高一级才用足朱色，避免整块发红 */
+.heatmap__cell--l1,
+.heatmap__swatch.heatmap__cell--l1 {
+  background: color-mix(in srgb, var(--vermilion) 16%, var(--rice));
+}
+
+.heatmap__cell--l2,
+.heatmap__swatch.heatmap__cell--l2 {
+  background: color-mix(in srgb, var(--vermilion) 34%, var(--rice));
+}
+
+.heatmap__cell--l3,
+.heatmap__swatch.heatmap__cell--l3 {
+  background: color-mix(in srgb, var(--vermilion) 58%, var(--rice));
+}
+
+.heatmap__cell--l4,
+.heatmap__swatch.heatmap__cell--l4 {
+  background: var(--vermilion);
+}

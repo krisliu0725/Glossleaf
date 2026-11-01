@@ -1,0 +1,514 @@
+{
+  "snapshot": {
+    "ok": true,
+    "data": {
+      "generatedAt": "2026-10-29T07:00:10.027Z",
+      "range": "30",
+      "timezone": "Asia/Shanghai",
+      "settings": {
+        "enabled": true,
+        "trackingSince": "2026-09-24T06:54:14.010Z"
+      },
+      "reading": {
+        "activeMs": 13080000,
+        "sessions": 56,
+        "documents": 2,
+        "uniquePages": 4,
+        "pageVisits": 56,
+        "uniqueVisitedCharacters": 3600,
+        "uniqueVisitedWords": 1120,
+        "visitedCharacters": 50400,
+        "visitedWords": 15680,
+        "pagesWithText": 4
+      },
+      "readingDocuments": [
+        {
+          "itemId": "c653ea52-6f0c-4caa-bbb5-5f768a09249f",
+          "title": "研究设计与证据解释",
+          "documentVersionId": "4b8330d1-5914-40cc-9c4c-39c7b218c3ee",
+          "activeMs": 6540000,
+          "uniquePages": 2,
+          "uniqueVisitedCharacters": 1800,
+          "uniqueVisitedWords": 560,
+          "topics": [
+            "研究方法",
+            "国际关系"
+          ],
+          "field": "政治学"
+        },
+        {
+          "itemId": "3da27198-23dc-4849-b21a-70de17911622",
+          "title": "能源转型与制度选择",
+          "documentVersionId": "19e1f11f-7cfa-4fbd-9618-241d41528218",
+          "activeMs": 6540000,
+          "uniquePages": 2,
+          "uniqueVisitedCharacters": 1800,
+          "uniqueVisitedWords": 560,
+          "topics": [
+            "能源转型",
+            "制度研究"
+          ],
+          "field": "环境政治"
+        }
+      ],
+      "tokens": {
+        "inputTokens": 29654,
+        "outputTokens": 15158,
+        "totalTokens": 44812,
+        "cachedInputTokens": null,
+        "reasoningTokens": null,
+        "attempts": 56,
+        "completed": 52,
+        "failed": 4,
+        "cancelled": 0,
+        "reportedAttempts": 46,
+        "unknownAttempts": 10,
+        "estimatedInputTokens": 35924,
+        "estimatedOutputTokens": 18116
+      },
+      "models": [
+        {
+          "inputTokens": 14827,
+          "outputTokens": 7579,
+          "totalTokens": 22406,
+          "cachedInputTokens": null,
+          "reasoningTokens": null,
+          "attempts": 28,
+          "completed": 26,
+          "failed": 2,
+          "cancelled": 0,
+          "reportedAttempts": 23,
+          "unknownAttempts": 5,
+          "estimatedInputTokens": 17962,
+          "estimatedOutputTokens": 9058,
+          "provider": "compatible",
+          "model": "deepseek-flash",
+          "endpointHost": "api.deepseek.com"
+        },
+        {
+          "inputTokens": 14827,
+          "outputTokens": 7579,
+          "totalTokens": 22406,
+          "cachedInputTokens": null,
+          "reasoningTokens": null,
+          "attempts": 28,
+          "completed": 26,
+          "failed": 2,
+          "cancelled": 0,
+          "reportedAttempts": 23,
+          "unknownAttempts": 5,
+          "estimatedInputTokens": 17962,
+          "estimatedOutputTokens": 9058,
+          "provider": "gemini",
+          "model": "gemma-4-26b-a4b-it",
+          "endpointHost": "generativelanguage.googleapis.com"
+        }
+      ],
+      "purposes": [
+        {
+          "inputTokens": 19174,
+          "outputTokens": 9798,
+          "totalTokens": 28972,
+          "cachedInputTokens": null,
+          "reasoningTokens": null,
+          "attempts": 38,
+          "completed": 34,
+          "failed": 4,
+          "cancelled": 0,
+          "reportedAttempts": 30,
+          "unknownAttempts": 8,
+          "estimatedInputTokens": 24224,
+          "estimatedOutputTokens": 12212,
+          "purpose": "interactive"
+        },
+        {
+          "inputTokens": 10480,
+          "outputTokens": 5360,
+          "totalTokens": 15840,
+          "cachedInputTokens": null,
+          "reasoningTokens": null,
+          "attempts": 18,
+          "completed": 18,
+          "failed": 0,
+          "cancelled": 0,
+          "reportedAttempts": 16,
+          "unknownAttempts": 2,
+          "estimatedInputTokens": 11700,
+          "estimatedOutputTokens": 5904,
+          "purpose": "background"
+        }
+      ],
+      "trend": [
+        {
+          "day": "2026-09-29",
+          "activeMs": 0,
+          "pageVisits": 0,
+          "totalTokens": 0,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-09-30",
+          "activeMs": 0,
+          "pageVisits": 0,
+          "totalTokens": 0,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-01",
+          "activeMs": 480000,
+          "pageVisits": 2,
+          "totalTokens": 2656,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-02",
+          "activeMs": 460000,
+          "pageVisits": 2,
+          "totalTokens": 2604,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-03",
+          "activeMs": 440000,
+          "pageVisits": 2,
+          "totalTokens": 2552,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-04",
+          "activeMs": 420000,
+          "pageVisits": 2,
+          "totalTokens": 0,
+          "unknownAttempts": 2
+        },
+        {
+          "day": "2026-10-05",
+          "activeMs": 400000,
+          "pageVisits": 2,
+          "totalTokens": 2448,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-06",
+          "activeMs": 540000,
+          "pageVisits": 2,
+          "totalTokens": 2396,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-07",
+          "activeMs": 520000,
+          "pageVisits": 2,
+          "totalTokens": 2344,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-08",
+          "activeMs": 500000,
+          "pageVisits": 2,
+          "totalTokens": 2292,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-09",
+          "activeMs": 480000,
+          "pageVisits": 2,
+          "totalTokens": 0,
+          "unknownAttempts": 2
+        },
+        {
+          "day": "2026-10-10",
+          "activeMs": 460000,
+          "pageVisits": 2,
+          "totalTokens": 2188,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-11",
+          "activeMs": 440000,
+          "pageVisits": 2,
+          "totalTokens": 2136,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-12",
+          "activeMs": 420000,
+          "pageVisits": 2,
+          "totalTokens": 2084,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-13",
+          "activeMs": 400000,
+          "pageVisits": 2,
+          "totalTokens": 2032,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-14",
+          "activeMs": 540000,
+          "pageVisits": 2,
+          "totalTokens": 0,
+          "unknownAttempts": 2
+        },
+        {
+          "day": "2026-10-15",
+          "activeMs": 520000,
+          "pageVisits": 2,
+          "totalTokens": 1928,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-16",
+          "activeMs": 500000,
+          "pageVisits": 2,
+          "totalTokens": 1876,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-17",
+          "activeMs": 480000,
+          "pageVisits": 2,
+          "totalTokens": 1824,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-18",
+          "activeMs": 460000,
+          "pageVisits": 2,
+          "totalTokens": 1772,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-19",
+          "activeMs": 440000,
+          "pageVisits": 2,
+          "totalTokens": 0,
+          "unknownAttempts": 2
+        },
+        {
+          "day": "2026-10-20",
+          "activeMs": 420000,
+          "pageVisits": 2,
+          "totalTokens": 1668,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-21",
+          "activeMs": 400000,
+          "pageVisits": 2,
+          "totalTokens": 1616,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-22",
+          "activeMs": 540000,
+          "pageVisits": 2,
+          "totalTokens": 1564,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-23",
+          "activeMs": 520000,
+          "pageVisits": 2,
+          "totalTokens": 1512,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-24",
+          "activeMs": 500000,
+          "pageVisits": 2,
+          "totalTokens": 0,
+          "unknownAttempts": 2
+        },
+        {
+          "day": "2026-10-25",
+          "activeMs": 480000,
+          "pageVisits": 2,
+          "totalTokens": 1408,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-26",
+          "activeMs": 460000,
+          "pageVisits": 2,
+          "totalTokens": 1356,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-27",
+          "activeMs": 440000,
+          "pageVisits": 2,
+          "totalTokens": 1304,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-28",
+          "activeMs": 420000,
+          "pageVisits": 2,
+          "totalTokens": 1252,
+          "unknownAttempts": 0
+        },
+        {
+          "day": "2026-10-29",
+          "activeMs": 0,
+          "pageVisits": 0,
+          "totalTokens": 0,
+          "unknownAttempts": 0
+        }
+      ],
+      "library": {
+        "items": 2,
+        "documents": 2,
+        "managedBytes": 4386,
+        "indexedPages": 4,
+        "indexedDocuments": 2,
+        "pendingDocuments": 0,
+        "failedDocuments": 0,
+        "annotations": 0,
+        "comments": 0,
+        "notes": 0,
+        "translations": 0,
+        "glossaryTerms": 0,
+        "cachedTranslations": 0
+      },
+      "activity": {
+        "annotations": 0,
+        "comments": 0,
+        "translations": 52,
+        "imports": 2,
+        "exports": 0,
+        "errors": 4,
+        "cacheHits": 0,
+        "searches": 0,
+        "jobsCompleted": 0,
+        "jobsFailed": 0
+      },
+      "topics": [
+        {
+          "id": "confirmed:研究方法",
+          "label": "研究方法",
+          "documents": 1,
+          "activeMs": 6540000,
+          "basis": "confirmed"
+        },
+        {
+          "id": "confirmed:国际关系",
+          "label": "国际关系",
+          "documents": 1,
+          "activeMs": 6540000,
+          "basis": "confirmed"
+        },
+        {
+          "id": "confirmed:能源转型",
+          "label": "能源转型",
+          "documents": 1,
+          "activeMs": 6540000,
+          "basis": "confirmed"
+        },
+        {
+          "id": "confirmed:制度研究",
+          "label": "制度研究",
+          "documents": 1,
+          "activeMs": 6540000,
+          "basis": "confirmed"
+        }
+      ],
+      "fields": [
+        {
+          "id": "confirmed:政治学",
+          "label": "政治学",
+          "documents": 1,
+          "activeMs": 6540000,
+          "basis": "confirmed"
+        },
+        {
+          "id": "confirmed:环境政治",
+          "label": "环境政治",
+          "documents": 1,
+          "activeMs": 6540000,
+          "basis": "confirmed"
+        }
+      ],
+      "notices": [
+        "阅读时长仅计入窗口聚焦、系统未闲置且阅读器持续心跳的采样区间；不代表持续注视或理解。",
+        "字数/词数是访问页可提取文本的代理值；不等于实际逐字阅读。扫描页未索引时计为未知。",
+        "Token 仅累计服务返回的用量；未返回保持未知。估算值单独列出，不用于计费。",
+        "话题/领域优先使用用户确认分类；未分类文献分别以标签/集合为代理，不自动推断。",
+        "概览的文库存量包含历史数据；期间活动与网络用量只统计启用后的本机记录。"
+      ]
+    }
+  },
+  "modelText": "笺 · 使用概览\n\n模型用量\n最近 7 天\n最近 30 天\n最近 90 天\n自开始记录\n刷新\n导出完整数据\n最近 30 天 · Asia/Shanghai\n数据口径与来源 ↗\n模型用量\n用量口径 ↗\n输入 Token\n29,654\n输出 Token\n15,158\n未回传请求\n10 / 56 次\n账单金额\n暂无账单数据\n服务 / 模型\t回传 Token\t回传覆盖\t成功 / 失败 / 取消\ndeepseek-flash\napi.deepseek.com · compatible\n\t22,406\t23 / 28 次\t26 / 2 / 0\ngemma-4-26b-a4b-it\ngenerativelanguage.googleapis.com · gemini\n\t22,406\t23 / 28 次\t26 / 2 / 0\n交互翻译\n28,972 Token\n\n38 次请求 · 8 次未回传\n\n整篇后台\n15,840 Token\n\n18 次请求 · 2 次未回传\n\n查看文本估算与细分字段\n记录已开启，仅保存在本机\n更新于 15:00:09\n查看数据覆盖说明",
+  "modalInert": true,
+  "classification": {
+    "ok": true,
+    "data": {
+      "itemId": "c653ea52-6f0c-4caa-bbb5-5f768a09249f",
+      "topics": [
+        "研究方法",
+        "国际关系"
+      ],
+      "field": "政治学"
+    }
+  },
+  "exportRows": 56,
+  "navigation": {
+    "nav": 760,
+    "viewport": 760,
+    "buttons": [
+      {
+        "right": 54,
+        "text": "总览"
+      },
+      {
+        "right": 136,
+        "text": "阅读记录"
+      },
+      {
+        "right": 218,
+        "text": "研究方向"
+      },
+      {
+        "right": 300,
+        "text": "模型用量"
+      }
+    ]
+  },
+  "overflow": {
+    "page": false,
+    "body": false
+  },
+  "diagnostics": {
+    "ok": true,
+    "data": {
+      "generatedAt": "2026-10-29T07:00:11.871Z",
+      "appVersion": "45.1.0",
+      "platform": "darwin",
+      "architecture": "arm64",
+      "electron": "45.1.0",
+      "node": "24.22.1",
+      "schemaVersion": 4,
+      "serviceReady": true,
+      "rendererCount": 1,
+      "memory": {
+        "workingSetKb": 0,
+        "privateKb": 53681
+      },
+      "index": {
+        "total": 2,
+        "completed": 2,
+        "failed": 0,
+        "pages": 4
+      },
+      "scope": "应用状态摘要；不包含文件路径、文献正文、API Key、端点或使用明细"
+    }
+  },
+  "preferences": {
+    "ok": true,
+    "data": {
+      "theme": "dark",
+      "dark": true
+    }
+  }
+}

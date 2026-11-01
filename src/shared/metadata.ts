@@ -1,0 +1,8 @@
+import { z } from 'zod'
+export const metadataSchema=z.object({title:z.string().trim().min(1).max(2000),type:z.string().min(1).max(80),date:z.string().trim().max(200).nullable(),language:z.string().trim().max(80).nullable(),fields:z.record(z.string().max(100),z.string().max(500000)),creators:z.array(z.object({order:z.number().int(),role:z.string().min(1).max(80),nameMode:z.enum(['person','literal']),givenName:z.string().max(500).nullable(),familyName:z.string().max(500).nullable(),literalName:z.string().max(1000).nullable()})).max(200)}).superRefine((v,ctx)=>{if(Object.keys(v.fields).length>200)ctx.addIssue({code:'custom',message:'字段过多'});const date=v.date&&/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/.exec(v.date);if(date){const y=Number(date[1]),m=Number(date[2]??1),d=Number(date[3]??1),days=[31,y%4===0&&(y%100!==0||y%400===0)?29:28,31,30,31,30,31,31,30,31,30,31];if(y<1||m<1||m>12||d<1||d>(days[m-1]??0))ctx.addIssue({code:'custom',message:'日期无效，请填写真实年月日，或保留原始文字日期'})}for(const c of v.creators)if(!(c.nameMode==='literal'?c.literalName?.trim():c.familyName?.trim()||c.givenName?.trim()))ctx.addIssue({code:'custom',message:'作者姓名不能为空'})})
+export function normalizeDoi(raw: string): string {
+ let doi=raw.trim().replace(/^doi:\s*/i,'')
+ if(/^https?:\/\//i.test(doi)) {const url=new URL(doi);if(!['doi.org','dx.doi.org'].includes(url.hostname)||url.search||url.hash)throw new Error('请输入 DOI 或 doi.org 链接');doi=decodeURIComponent(url.pathname.slice(1))}
+ if(doi.length>500||!/^10\.\d{4,9}\/[^\s]+$/i.test(doi)||/\p{C}/u.test(doi))throw new Error('DOI 格式无效，例如 10.1038/nphys1170')
+ return doi.toLowerCase()
+}

@@ -1,0 +1,59 @@
+/* 0.11: document tabs reuse the title row; tools are split by purpose at opposite ends of one band. */
+.reader-tabs-slot{flex:1;min-width:0;display:flex;overflow:hidden}
+.reader-document-tabs{display:flex;align-items:stretch;gap:4px;flex:1;min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding:2px 0}
+.reader-document-tab{display:flex;align-items:center;flex:0 1 220px;min-width:100px;max-width:260px;border:1px solid transparent;border-radius:3px;background:transparent;box-shadow:none}
+.reader-document-tab[data-selected=true]{border-color:var(--line);background:var(--surface-raised);box-shadow:inset 0 -2px var(--jian-vermilion)}
+:root .redesigned-reader .reader-appbar .reader-document-tab>button,.reader-document-tab>button{display:flex;align-items:center;min-height:34px;height:36px;padding:5px 8px;border:0;border-radius:0;box-shadow:none;background:transparent;color:var(--text-secondary);font:500 15px/22px var(--font-title);min-width:0;flex:1;cursor:pointer}
+:root .redesigned-reader .reader-appbar .reader-document-tab>button[aria-selected=true]{color:var(--text-primary)}
+.reader-document-tab>button>span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;width:100%}
+:root .redesigned-reader .reader-appbar .reader-document-tab>.reader-tab-close,.reader-document-tab>.reader-tab-close{flex:0 0 24px;width:24px;height:26px;min-height:26px;padding:4px;margin-right:4px;border:1px solid transparent;border-radius:3px;color:var(--text-muted)}
+:root .redesigned-reader .reader-appbar .reader-document-tab>.reader-tab-close:hover,.reader-document-tab>.reader-tab-close:hover{background:var(--action-hover);border-color:var(--line)}
+:root .redesigned-reader .reader-appbar .reader-document-tab svg{width:13px;height:13px;flex:none}
+:root .reader-toolband{justify-content:space-between;gap:10px;min-height:42px;height:42px;flex:0 0 42px;padding:4px 20px;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}
+:root .reader-toolband>*{flex-shrink:0}
+:root .reader-toolband .reader-tool-group{gap:2px;margin:0;border-right:1px solid var(--line);padding-right:10px}
+:root .reader-toolband .reader-tool-group button{min-width:30px;width:30px;height:30px;min-height:30px;padding:5px}
+:root .reader-toolband .reader-browse-tools .page-capsule{width:auto;min-width:72px;padding:4px 8px;gap:7px;font-size:13px;border-color:var(--line);background:var(--surface-raised)}
+:root .reader-toolband .reader-zoom{padding-left:10px;gap:1px}
+:root .reader-toolband .reader-zoom button{min-width:30px;padding-inline:5px}
+:root .reader-toolband .reader-zoom button:nth-child(2){min-width:54px;font-size:13px}
+:root .reader-toolband .segmented button{padding-inline:10px;font-size:13px}
+:root .reader-toolband .reader-notes-toggle{font-size:13px}
+:root .redesigned-reader .reader__pane--source{padding:18px 12px}
+:root .redesigned-reader .pdf-scroll{padding-inline:20px;gap:24px}
+:root .redesigned-reader .gloss-tabs{display:flex;width:100%;padding:0;gap:0;min-height:42px;flex:0 0 42px;border-bottom:1px solid var(--line)}
+:root .redesigned-reader .gloss-tabs [role=tab]{flex:1 1 50%;min-width:0;width:50%;height:42px;min-height:42px;padding:6px 12px;margin:0;border:0;border-radius:0;background:transparent;font-size:14px;text-align:center;box-shadow:none}
+:root .redesigned-reader .gloss-tabs [role=tab]+[role=tab]{border-left:1px solid var(--line)}
+:root .redesigned-reader .gloss-tabs [aria-selected=true]{background:var(--action-chosen);box-shadow:inset 0 -2px var(--jian-vermilion)}
+:root .redesigned-reader .gloss-flow{padding:10px 14px 18px}
+:root .redesigned-reader .notes-filter{margin:0 0 6px;padding:0;min-height:32px;gap:6px}
+:root .redesigned-reader .notes-filter [role=tablist]{gap:8px}
+:root .redesigned-reader .notes-filter [role=tab]{padding:5px 2px;min-height:30px;font-size:13px;border-radius:0;background:transparent;box-shadow:none}
+:root .redesigned-reader .notes-filter .icon-button{height:28px;min-height:28px;width:28px;padding:5px}
+:root .redesigned-reader .notes-review-controls{margin:0 0 10px}
+:root .redesigned-reader .notes-search-row{display:flex;gap:8px;align-items:center;margin:0}
+:root .redesigned-reader .notes-search-row>input{flex:1;min-width:0;width:100%;height:30px;min-height:30px;padding:4px 1px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;font:13px/20px var(--font-ui);color:var(--text-primary)}
+:root .redesigned-reader .notes-filter-toggle{display:flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;min-height:28px;padding:4px;border:1px solid var(--line);border-radius:3px;background:transparent;color:var(--text-muted);cursor:pointer}
+:root .redesigned-reader .notes-filter-toggle:hover,:root .redesigned-reader .notes-filter-toggle[aria-expanded=true],:root .redesigned-reader .notes-filter-toggle[aria-pressed=true]{background:var(--action-chosen);color:var(--text-primary)}
+:root .redesigned-reader .notes-secondary-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:7px}
+:root .redesigned-reader .notes-secondary-filters select{flex:1;max-width:100%;min-width:0;font-size:12px;padding:4px 1px;margin:0}
+.notes-filter-reset{border:0;background:transparent;color:var(--text-muted);font-size:12px;cursor:pointer}
+:root .redesigned-reader .notes-page-heading{margin:10px 0 7px;font-size:12px;line-height:18px}
+:root .redesigned-reader .reading-item{padding:11px 12px;margin:0 0 10px;line-height:1.75}
+:root .redesigned-reader .reading-item .user-note{margin:8px 0;font-size:15px;line-height:1.8}
+:root .redesigned-reader .reading-item-actions{gap:8px;margin-top:6px;opacity:.85}
+:root .redesigned-reader .reading-item-actions button{min-height:26px;font-size:12px}
+.library-reading-shelf{display:flex;align-items:center;gap:16px;flex:0 0 34px;min-height:34px;max-height:34px;padding:0 24px;background:var(--surface-sunken);border-bottom:1px solid var(--line)}
+.library-reading-shelf>span{flex:none;color:var(--text-muted);font:12px/20px var(--font-ui)}
+.reader-document-tabs--compact{padding:0;gap:6px}.reader-document-tabs--compact .reader-document-tab{min-width:100px;max-width:230px}
+.reader-document-tabs--compact .reader-document-tab>button{font-size:13px;height:30px;min-height:30px;padding:3px 8px}
+@media(min-width:1121px){.reader-document-tabs:has(.reader-document-tab:only-child) .reader-document-tab{max-width:none;flex:1}.reader-document-tabs:has(.reader-document-tab:only-child) [role=tab]{font-size:17px}}
+@media(max-width:1050px){:root .reader-toolband{gap:7px;padding-inline:14px}:root .reader-toolband .reader-rotate{display:none}:root .reader-toolband .reader-view-button{display:none}:root .reader-toolband .reader-tool-group{padding-right:7px}}
+@media(max-width:900px){:root .reader-toolband{gap:6px}:root .reader-toolband .reader-zoom{padding-left:6px}:root .reader-toolband .reader-tool-group{padding-right:6px}.reader-document-tab{min-width:90px;max-width:180px}}
+
+@media(min-width:1051px){.reader-narrow-action{display:none!important}}
+
+.reader-tools-left,.reader-tools-right{display:flex;align-items:center;gap:10px;flex:none}.reader-tools-right{margin-left:auto}.reader-toolband{column-gap:28px!important}:root .reader-toolband .reader-mark-tools{border-right:0;padding-right:0}
+@media(max-width:1050px){.reader-tools-left,.reader-tools-right{gap:7px}.reader-toolband{column-gap:22px!important}}
+@media(max-width:900px){.reader-tools-left,.reader-tools-right{gap:6px}}
+.note-save-recovery{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;border-top:1px solid var(--line);padding-top:8px}.note-save-recovery button{font-size:12px!important;min-height:28px!important}

@@ -1,0 +1,278 @@
+{
+  "index": {
+    "ok": true,
+    "data": {
+      "total": 1,
+      "completed": 1,
+      "failed": 0,
+      "pages": 2,
+      "errors": [],
+      "running": false
+    }
+  },
+  "body": {
+    "ok": true,
+    "data": {
+      "groups": [
+        {
+          "itemId": "090dee4c-62d5-4ee8-b775-5f7e909c4910",
+          "title": "fixture",
+          "hits": [
+            {
+              "id": "page:67590cc6-0164-4ac8-94e0-4e37b0fa889f:0",
+              "kind": "body",
+              "itemId": "090dee4c-62d5-4ee8-b775-5f7e909c4910",
+              "title": "fixture",
+              "documentVersionId": "67590cc6-0164-4ac8-94e0-4e37b0fa889f",
+              "pageIndex": 0,
+              "annotationId": null,
+              "snippet": "…esign connects evidence with careful interpretation.\nA river bank is different from a financial bank [12].\nThis paragraph tests contextual translation and saved quotations.\nMethods\nWe compare source paragraphs with their translated cou…",
+              "marks": [
+                [
+                  56,
+                  61
+                ],
+                [
+                  62,
+                  66
+                ]
+              ],
+              "anchor": {
+                "documentVersionId": "67590cc6-0164-4ac8-94e0-4e37b0fa889f",
+                "pageIndex": 0,
+                "rects": [
+                  [
+                    50,
+                    666,
+                    313.44800000000004,
+                    678
+                  ]
+                ],
+                "exact": "river bank"
+              }
+            }
+          ]
+        }
+      ],
+      "nextCursor": null,
+      "scanned": 1,
+      "limitedScan": false,
+      "pendingMetadata": 0
+    }
+  },
+  "fixture": {
+    "id": "090dee4c-62d5-4ee8-b775-5f7e909c4910",
+    "type": "document",
+    "title": "fixture",
+    "language": null,
+    "date": null,
+    "creators": "",
+    "year": null,
+    "documentCount": 1,
+    "annotationCount": 0,
+    "hasPdf": true,
+    "updatedAt": "2026-10-29T06:22:33.578Z"
+  },
+  "page": "2",
+  "annotation": {
+    "ok": true,
+    "data": "2e00c38c-f9b3-4fd9-9716-011f83f9f2d5"
+  },
+  "excerpt": {
+    "ok": true,
+    "data": {
+      "groups": [
+        {
+          "itemId": "090dee4c-62d5-4ee8-b775-5f7e909c4910",
+          "title": "fixture",
+          "hits": [
+            {
+              "id": "annotation:2e00c38c-f9b3-4fd9-9716-011f83f9f2d5",
+              "kind": "excerpts",
+              "itemId": "090dee4c-62d5-4ee8-b775-5f7e909c4910",
+              "title": "fixture",
+              "documentVersionId": "67590cc6-0164-4ac8-94e0-4e37b0fa889f",
+              "pageIndex": 0,
+              "annotationId": "2e00c38c-f9b3-4fd9-9716-011f83f9f2d5",
+              "snippet": "river bank\n河岸与能源\n外交与能源 reading note",
+              "marks": [
+                [
+                  14,
+                  16
+                ]
+              ],
+              "anchor": {
+                "documentVersionId": "67590cc6-0164-4ac8-94e0-4e37b0fa889f",
+                "pageIndex": 0,
+                "rects": [
+                  [
+                    50,
+                    580,
+                    300,
+                    600
+                  ]
+                ],
+                "exact": "river bank"
+              }
+            }
+          ]
+        }
+      ],
+      "nextCursor": null,
+      "scanned": 1,
+      "limitedScan": true,
+      "pendingMetadata": 0
+    }
+  },
+  "beforeConfirm": {
+    "ok": true,
+    "data": {
+      "items": 1,
+      "documents": 1,
+      "annotations": 1,
+      "notes": 0,
+      "collections": 0,
+      "tags": 0,
+      "totalBytes": 2263
+    }
+  },
+  "afterConfirm": {
+    "ok": true,
+    "data": {
+      "total": 2,
+      "items": [
+        {
+          "id": "3044cb18-7614-4574-bd3b-0c534319fae1",
+          "type": "journalArticle",
+          "title": "外交与能源：An Evidence-Based Study",
+          "language": "zh-CN",
+          "date": "2026-10-29",
+          "creators": "张 明, Institute for Evidence",
+          "year": "2026",
+          "documentCount": 0,
+          "annotationCount": 0,
+          "hasPdf": false,
+          "updatedAt": "2026-10-29T06:22:36.391Z"
+        },
+        {
+          "id": "090dee4c-62d5-4ee8-b775-5f7e909c4910",
+          "type": "document",
+          "title": "fixture",
+          "language": null,
+          "date": null,
+          "creators": "",
+          "year": null,
+          "documentCount": 1,
+          "annotationCount": 1,
+          "hasPdf": true,
+          "updatedAt": "2026-10-29T06:22:33.578Z"
+        }
+      ]
+    }
+  },
+  "duplicate": {
+    "ok": true,
+    "data": {
+      "doi": "10.1234/jian-fixture",
+      "draft": {
+        "title": "外交与能源：An Evidence-Based Study",
+        "type": "journalArticle",
+        "date": "2026-10-29",
+        "language": "zh-CN",
+        "fields": {
+          "DOI": "10.1234/jian-fixture",
+          "metadataSource": "Crossref REST API",
+          "metadataSourceJson": "{\"DOI\":\"10.1234/jian-fixture\",\"title\":[\"外交与能源：An Evidence-Based Study\"],\"type\":\"journal-article\",\"author\":[{\"family\":\"张\",\"given\":\"明\"},{\"name\":\"Institute for Evidence\"}],\"published\":{\"date-parts\":[[2026,10,29]]},\"container-title\":[\"研究方法\"],\"volume\":\"8\",\"issue\":\"2\",\"page\":\"10-20\",\"language\":\"zh-CN\",\"URL\":\"https://doi.org/10.1234/jian-fixture\"}",
+          "metadataRetrievedAt": "2026-10-29T06:22:36.826Z",
+          "originalType": "journal-article",
+          "publicationTitle": "研究方法",
+          "volume": "8",
+          "issue": "2",
+          "pages": "10-20",
+          "url": "https://doi.org/10.1234/jian-fixture"
+        },
+        "creators": [
+          {
+            "order": 0,
+            "role": "author",
+            "nameMode": "person",
+            "givenName": "明",
+            "familyName": "张",
+            "literalName": null
+          },
+          {
+            "order": 1,
+            "role": "author",
+            "nameMode": "literal",
+            "givenName": null,
+            "familyName": null,
+            "literalName": "Institute for Evidence"
+          }
+        ]
+      },
+      "source": "https://api.crossref.org/works/10.1234%2Fjian-fixture",
+      "duplicates": [
+        {
+          "id": "3044cb18-7614-4574-bd3b-0c534319fae1",
+          "title": "外交与能源：An Evidence-Based Study"
+        }
+      ]
+    }
+  },
+  "duplicateDenied": {
+    "ok": false,
+    "error": {
+      "code": "M4",
+      "message": "SERVICE_ERROR: Error: 文库中已有相同 DOI；请打开已有文献，或明确选择保留独立条目",
+      "retryable": true
+    }
+  },
+  "exports": {
+    "csl-json": {
+      "bytes": 728,
+      "warnings": [
+        "「fixture」未记录作者，引用按无作者条目处理。",
+        "「fixture」未记录日期。",
+        "「fixture」类型 document 采用通用映射，请检查。",
+        "文献交换仅导出支持映射的元数据，不包含附件、集合、标注、阅读位置或翻译任务。"
+      ]
+    },
+    "bibtex": {
+      "bytes": 416,
+      "warnings": [
+        "「fixture」未记录作者，引用按无作者条目处理。",
+        "「fixture」未记录日期。",
+        "「fixture」类型 document 采用通用映射，请检查。",
+        "文献交换仅导出支持映射的元数据，不包含附件、集合、标注、阅读位置或翻译任务。"
+      ]
+    },
+    "markdown": {
+      "bytes": 498,
+      "warnings": [
+        "「fixture」未记录作者，引用按无作者条目处理。",
+        "「fixture」未记录日期。",
+        "「fixture」类型 document 采用通用映射，请检查。",
+        "阅读成果包含已保存摘录；不包含 PDF 文件，也不能替代完整文库备份。"
+      ]
+    },
+    "excerpts-json": {
+      "bytes": 1741,
+      "warnings": [
+        "「fixture」未记录作者，引用按无作者条目处理。",
+        "「fixture」未记录日期。",
+        "「fixture」类型 document 采用通用映射，请检查。",
+        "阅读成果包含已保存摘录；不包含 PDF 文件，也不能替代完整文库备份。"
+      ]
+    },
+    "citation": {
+      "bytes": 198,
+      "warnings": [
+        "「fixture」未记录作者，引用按无作者条目处理。",
+        "「fixture」未记录日期。",
+        "「fixture」类型 document 采用通用映射，请检查。"
+      ]
+    }
+  },
+  "clipboard": "[1] 张明, INSTITUTE FOR EVIDENCE. 外交与能源：An Evidence-Based Study[J/OL]. 研究方法, 2026, 8(2): 10-20. https://doi.org/10.1234/jian-fixture. DOI:10.1234/jian-fixture.\n",
+  "doiCalls": 2
+}

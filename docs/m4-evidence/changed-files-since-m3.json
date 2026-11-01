@@ -1,0 +1,227 @@
+[
+  {
+    "path": "src/data-service/db.ts",
+    "status": "modified",
+    "sha256": "44880ef4bf0dfd482ea1308f8462bc0f3b9af1c7b074cea8f85c826cb14798fc"
+  },
+  {
+    "path": "src/data-service/index.ts",
+    "status": "modified",
+    "sha256": "92632411e8e6994c735887ca3a59ca08c4165cd9b3503cd7067561119f123446"
+  },
+  {
+    "path": "src/data-service/m4.ts",
+    "status": "added",
+    "sha256": "33afd570a8c4e10450565272ef66e350a7ee71bf484985f082c1564bc820189c"
+  },
+  {
+    "path": "src/data-service/repo.ts",
+    "status": "modified",
+    "sha256": "9da7359dd33301ae39d376cb981a4e8f4999991121cecbb0dd05e82cac02e0fa"
+  },
+  {
+    "path": "src/data-service/schema.ts",
+    "status": "modified",
+    "sha256": "fa2ef0d954178c81ff734a9eb224758102af79f2841e544058ad62a3beb3580d"
+  },
+  {
+    "path": "src/main/index.ts",
+    "status": "modified",
+    "sha256": "27daa61e45546b435821d198be36cc8f511700d939f12be7d32f9f48b8849e8e"
+  },
+  {
+    "path": "src/main/ipc.ts",
+    "status": "modified",
+    "sha256": "fc922c572bad6cf6f055702556d41a60a2287bff23c678971e7cbd25bb89292e"
+  },
+  {
+    "path": "src/main/m4/doi.ts",
+    "status": "added",
+    "sha256": "070dd934672864a0ca8c93f408f9dcc3c6445297851d1dd4d91844ae88d373c7"
+  },
+  {
+    "path": "src/main/m4/exports.ts",
+    "status": "added",
+    "sha256": "b72fa2c1804419f33a7ffc8a63817ba212425609ba411918fbebae5fde734a44"
+  },
+  {
+    "path": "src/main/m4/indexer.ts",
+    "status": "added",
+    "sha256": "6f335485352906882eab323060725afb382dff3f226bcf81a11af0012a0eef89"
+  },
+  {
+    "path": "src/main/m4/ipc.ts",
+    "status": "added",
+    "sha256": "36401f667c2d01160cda5aea9c7a0b830d74b6cbd0360ca90aa5f37106410794"
+  },
+  {
+    "path": "src/main/protocol.ts",
+    "status": "modified",
+    "sha256": "ecb2930120370f0cdc5675b06ed44fbb62056ae1d9e2bfc903e700cf611130d1"
+  },
+  {
+    "path": "src/preload/index.ts",
+    "status": "modified",
+    "sha256": "0fc57948b4772efb50abbcb6d7ff2f48320e79c425313fbc727f0524ee196ed1"
+  },
+  {
+    "path": "src/renderer/src/App.tsx",
+    "status": "modified",
+    "sha256": "31818aa5f34d877249e60d8bcc8749a6a40fb70c50950c635ca207bc2a54dd1b"
+  },
+  {
+    "path": "src/renderer/src/design/global.css",
+    "status": "modified",
+    "sha256": "ad553179d61b2f3e234a6e6ac1a80b57315d00275e4615e6e8598e3b73d1d3c9"
+  },
+  {
+    "path": "src/renderer/src/env.d.ts",
+    "status": "modified",
+    "sha256": "704279df0d71ec7e5453767e33f4dbaa4be161f650f148a3943ab7f606b63635"
+  },
+  {
+    "path": "src/renderer/src/m4/DocumentFind.tsx",
+    "status": "added",
+    "sha256": "7732f7a1f19f167e264107352760c0f2c3cf0fca7d8d83d919eb9ad21f7b721f"
+  },
+  {
+    "path": "src/renderer/src/m4/ExportDialog.tsx",
+    "status": "added",
+    "sha256": "d06253384a30f7f95d338c2754264a6b7556d8c72efdb4feaa9a720a98cd5ce4"
+  },
+  {
+    "path": "src/renderer/src/m4/IndexWorker.tsx",
+    "status": "added",
+    "sha256": "b0de7ed9278187b74ed1d9a7622b6a6889c47ddbf85f1b75fc897767c1937bba"
+  },
+  {
+    "path": "src/renderer/src/m4/MetadataDialog.tsx",
+    "status": "added",
+    "sha256": "027b395599fe3dee2576efdfb641b8274bc001977f6cecdb802c5efab7747733"
+  },
+  {
+    "path": "src/renderer/src/m4/SearchResults.tsx",
+    "status": "added",
+    "sha256": "17d25c3e3df4618810c9268cfd01638268c418adf2eeaf864313e3dcac2b9803"
+  },
+  {
+    "path": "src/renderer/src/reader/PdfPage.tsx",
+    "status": "modified",
+    "sha256": "50eacd4a133f3d5b7fc62d6f2dddfad1fa3a2610ed7430a60253de361c20c105"
+  },
+  {
+    "path": "src/renderer/src/views/LibraryView.tsx",
+    "status": "modified",
+    "sha256": "2f2bdb3414669d69cd564a58d123dbdae20e955ef2a6204330bd23897e607829"
+  },
+  {
+    "path": "src/renderer/src/views/ReaderView.tsx",
+    "status": "modified",
+    "sha256": "b2e4c437c5e536b34326670ec32a7d7c7dec2daac5d06daa82af92e969ac031c"
+  },
+  {
+    "path": "src/shared/anchors.ts",
+    "status": "added",
+    "sha256": "09112d81cdb0e8252fac2c14a17dea086abfa9dbaf2697e5e118632d3f43d209"
+  },
+  {
+    "path": "src/shared/m4.ts",
+    "status": "added",
+    "sha256": "f664544568b0e1c52d17ddc3b7f2b73f02a391966db9582f5bad911e3fece2ac"
+  },
+  {
+    "path": "src/shared/metadata.ts",
+    "status": "added",
+    "sha256": "7f09535d173c1e06635fbfb5d4b96bfb4e7fbf3ad009ad3dfff9b47e767a477b"
+  },
+  {
+    "path": "src/shared/page-text.ts",
+    "status": "added",
+    "sha256": "9446cd8deb1bbfe363cfc62c60746b7bee01bff9f85deb140c92fe73b460a38c"
+  },
+  {
+    "path": "src/shared/search-text.ts",
+    "status": "added",
+    "sha256": "492307809a1cd28001222a851b2415f2ecb6f26fbd17ec84337a736827c99f5f"
+  },
+  {
+    "path": "src/shared/vendor.d.ts",
+    "status": "added",
+    "sha256": "8b062f2e216a0c2eb05add291d7c79c2ac1436162153bfcd3926c1a15bc0ac77"
+  },
+  {
+    "path": "scripts/m4-e2e.cjs",
+    "status": "added",
+    "sha256": "225136d19ce572d21475750a61a44581c1d2c5202b7a6f09bbc9c4cd3f98e2d4"
+  },
+  {
+    "path": "scripts/test.cjs",
+    "status": "modified",
+    "sha256": "fab828895934ed11e6ad4066cabb1325534b7c91b3cec0c80ae4eb626779564d"
+  },
+  {
+    "path": "tests/index.ts",
+    "status": "added",
+    "sha256": "fffe799de2c1c33b97a698489d7c5b3f8df038300417848c51c4bb4c39555624"
+  },
+  {
+    "path": "tests/m4.test.ts",
+    "status": "added",
+    "sha256": "3c4479bc3a79c9b913feccad61ed71540c08658c04f8d17b1ce74ac3e9fa33c2"
+  },
+  {
+    "path": "resources/csl/gbt7714-2015-numeric.csl",
+    "status": "added",
+    "sha256": "d9cd04f94bc21a99dc320d0a2230d5a1fb47e3634c17c5820cf975c40db3c0c7"
+  },
+  {
+    "path": "resources/csl/locales-en-US.xml",
+    "status": "added",
+    "sha256": "ac864c7c21166b4390d82c31792cdc509400727fa0060b43d8aa17e07f9cb079"
+  },
+  {
+    "path": "resources/csl/locales-zh-CN.xml",
+    "status": "added",
+    "sha256": "95cebc667f2da8fb5b9864e49941e3f867d59f79feba929bc58e8ed6bfd4d582"
+  },
+  {
+    "path": "resources/csl/manifest.json",
+    "status": "added",
+    "sha256": "87afe4bfd48c6d067b7a48c0b54d376f47e4f2d51be07d0db4790d674583d04b"
+  },
+  {
+    "path": "resources/licenses/CC-BY-SA-3.0.txt",
+    "status": "added",
+    "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f"
+  },
+  {
+    "path": "resources/licenses/CC-BY-SA-4.0.txt",
+    "status": "added",
+    "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966"
+  },
+  {
+    "path": "resources/licenses/CPAL-1.0.txt",
+    "status": "added",
+    "sha256": "54cef60295bdffd5d41904338632538db1f3cdcd4c5f7ea5bb021d04eef14d92"
+  },
+  {
+    "path": "resources/licenses/citeproc-2.4.63-source.js",
+    "status": "added",
+    "sha256": "55abba1a8b8b48c14323fd053f9646013b4b7a0c977938064ecf5195a502b9f1"
+  },
+  {
+    "path": "resources/licenses/citeproc-NOTICE.txt",
+    "status": "added",
+    "sha256": "b96ca8e1716f93449b480083c7510c18d129fa9afa4644d62c6347c06177ce30"
+  },
+  {
+    "path": "package.json",
+    "status": "modified",
+    "sha256": "82c6105307d1e734269aef045fb280b72c5ef617b17209501116c3d008be789c"
+  },
+  {
+    "path": "pnpm-lock.yaml",
+    "status": "modified",
+    "sha256": "bcc28ce1983247bfa97d149817b97d101b31fac5a30580bfc3969e5f9cbe5e62"
+  }
+]

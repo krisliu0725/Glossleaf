@@ -1,0 +1,70 @@
+{
+  "version": "0.11.1",
+  "date": "2026-11-01",
+  "baseline": "0.11.0",
+  "unitTests": {
+    "passed": 93,
+    "failed": 0
+  },
+  "typecheck": "PASS",
+  "productionBuild": "PASS",
+  "nativePointerAndDelayedIoAudit": "PASS",
+  "sixDocumentAndBilingualLayoutRegression": "PASS",
+  "coreReaderRegression": "PASS",
+  "settingsAndHomeNavigation": "PASS",
+  "geometryDpr2": "PASS",
+  "packageColdStart": {
+    "version": "0.11.1",
+    "packaged": true,
+    "coldStart": "PASS",
+    "english": true,
+    "sandbox": true,
+    "contextIsolation": true,
+    "webSecurity": true
+  },
+  "packageOutputFilesMatched": 211,
+  "signing": "local ad-hoc preview; verified",
+  "notarized": false,
+  "confirmedFixes": [
+    "tab close style and compact width isolation",
+    "latest-intent opens and queued closes",
+    "controller document identity before session save",
+    "all global navigation saves first",
+    "side-panel editor explicit leave commits",
+    "text and colour writes serialized",
+    "manual input cancels outdated motion/restoration",
+    "keyboard focus after async tab replacement",
+    "loading counter/tool safety"
+  ],
+  "measurements": [
+    {
+      "closeShape": {
+        "width": 24,
+        "height": 24,
+        "border": "0px",
+        "tabWidth": 244.796875,
+        "active": 0,
+        "role": "navigation"
+      }
+    },
+    {
+      "cancelled": {
+        "before": 111,
+        "after": 111
+      }
+    }
+  ],
+  "data": {
+    "schemaVersion": 7,
+    "schemaChanged": false,
+    "personalLibraryModified": false,
+    "apiKeysModified": false,
+    "originalPdfHashesChecked": true,
+    "paidModelCalls": 0
+  },
+  "limits": [
+    "No OCR/parallel PDF split view/separate reading windows added",
+    "Tab set remains per window session",
+    "Cloud credentials and every PDF/device combination not exercised"
+  ]
+}

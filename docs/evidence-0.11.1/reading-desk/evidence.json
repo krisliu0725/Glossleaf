@@ -1,0 +1,102 @@
+{
+  "checks": [
+    "six long titles remain scrollable without header overflow",
+    "save conflict blocks tab switch and preserves editable local draft",
+    "split 42px tool row: navigation/annotation left, view/notes right",
+    "full-width equal Translation/Notes tabs",
+    "compact notes, secondary filters on demand",
+    "immediate note commit and disk reading save before leaving",
+    "two document tabs: independent page/zoom/rotation/sidebar",
+    "one mounted Reader/PDF worker at a time; no duplicate tabs",
+    "Library shelf resumes open papers",
+    "Ctrl Tab; closing active chooses neighbour; last close returns Library",
+    "Chinese and English dark 900px: no toolbar/header overflow",
+    "original files unchanged"
+  ],
+  "layouts": [
+    {
+      "groupGap": 557
+    },
+    {
+      "height": 42,
+      "start": 20,
+      "end": 1340,
+      "width": 1360,
+      "count": 17,
+      "header": 60
+    },
+    {
+      "tabs": {
+        "width": 323,
+        "a": [
+          {
+            "w": 161.5,
+            "x": 1037
+          },
+          {
+            "w": 161.5,
+            "x": 1198.5
+          }
+        ]
+      },
+      "compact": {
+        "gap": 88,
+        "source": {
+          "x": 0,
+          "y": 102,
+          "width": 1036,
+          "height": 648,
+          "top": 102,
+          "right": 1036,
+          "bottom": 750,
+          "left": 0
+        },
+        "body": {
+          "x": 0,
+          "y": 102,
+          "width": 1360,
+          "height": 648,
+          "top": 102,
+          "right": 1360,
+          "bottom": 750,
+          "left": 0
+        }
+      }
+    },
+    {
+      "narrow": {
+        "overflow": false,
+        "headerOverflow": false,
+        "height": 42,
+        "last": 886,
+        "width": 900
+      }
+    },
+    {
+      "sixDocuments": {
+        "tabs": 6,
+        "scrolls": true,
+        "headerOverflow": false,
+        "activeVisible": true,
+        "readers": 1
+      }
+    },
+    {
+      "en": {
+        "headerOverflow": false,
+        "toolsOverflow": false,
+        "brand": "Glossleaf"
+      }
+    }
+  ],
+  "screens": [
+    "split-tools-zh",
+    "two-papers-notes-zh",
+    "two-papers-900",
+    "six-papers-long-titles-zh",
+    "two-papers-en-dark-900",
+    "tab-switch-conflict-retained"
+  ],
+  "paidModelCalls": 0,
+  "personalLibraryModified": false
+}

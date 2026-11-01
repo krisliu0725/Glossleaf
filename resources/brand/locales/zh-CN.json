@@ -1,0 +1,53 @@
+{
+  "brand": "笺",
+  "areas": {
+    "library": "书府",
+    "reader": "展卷"
+  },
+  "features": {
+    "bilingual": "对读",
+    "excerpts": "撷英",
+    "notes": "札记",
+    "search": "考索"
+  },
+  "secondary": {
+    "collections": "编帙",
+    "translate": "笺释",
+    "glossary": "释名",
+    "details": "著录",
+    "citations": "征引",
+    "import": "收录",
+    "backup": "留存",
+    "interlinear": "夹注"
+  },
+  "standard": {
+    "allItems": "全部文献",
+    "recentlyAdded": "最近添加",
+    "unfiled": "未归入集合",
+    "trash": "回收站",
+    "original": "原文",
+    "bilingualMode": "对读",
+    "translatePage": "翻译本页",
+    "translateSelection": "翻译选区",
+    "highlight": "高亮",
+    "saveExcerpt": "保存摘录",
+    "addNote": "添加笔记",
+    "backToSource": "回到原文",
+    "copyCitation": "复制引用",
+    "importPdf": "导入 PDF",
+    "importZotero": "从 Zotero 导入",
+    "settings": "设置",
+    "readingAppearance": "阅读与外观",
+    "translationSettings": "翻译",
+    "libraryBackup": "文库与备份",
+    "advancedDiagnostics": "高级与诊断",
+    "needsReview": "需要检查",
+    "resume": "继续",
+    "retry": "重试",
+    "cancel": "取消",
+    "paused": "已暂停",
+    "backupNow": "立即备份",
+    "restoreBackup": "恢复备份",
+    "newCollection": "新建集合"
+  }
+}

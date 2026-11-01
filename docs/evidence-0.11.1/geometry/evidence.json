@@ -1,0 +1,131 @@
+{
+  "checks": [
+    "rotation and zoom highlight geometry",
+    "cross-page single record, separate columns",
+    "scan point-note draft, no empty saved note",
+    "original hashes unchanged"
+  ],
+  "screens": [
+    "scan-point-note"
+  ],
+  "geometry": [
+    {
+      "zoom": 0.5,
+      "rotation": 0,
+      "scale": 0.6862745098039217,
+      "dpr": 2,
+      "offsetDevicePixels": 0.00006249999999852207
+    },
+    {
+      "zoom": 1,
+      "rotation": 0,
+      "scale": 1.3725490196078431,
+      "dpr": 2,
+      "offsetDevicePixels": 0.00030273437494088284
+    },
+    {
+      "zoom": 2,
+      "rotation": 0,
+      "scale": 2.7450980392156876,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0007500000000959517
+    },
+    {
+      "zoom": 4,
+      "rotation": 0,
+      "scale": 5.490196078431373,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0007890625001891749
+    },
+    {
+      "zoom": 0.5,
+      "rotation": 90,
+      "scale": 0.5303030303030304,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0009517045452867023
+    },
+    {
+      "zoom": 1,
+      "rotation": 90,
+      "scale": 1.0606060606060606,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0003248401988571459
+    },
+    {
+      "zoom": 2,
+      "rotation": 90,
+      "scale": 2.121212121212122,
+      "dpr": 2,
+      "offsetDevicePixels": 0.003806818180692062
+    },
+    {
+      "zoom": 4,
+      "rotation": 90,
+      "scale": 4.242424242424242,
+      "dpr": 2,
+      "offsetDevicePixels": 0.007613636363203113
+    },
+    {
+      "zoom": 0.5,
+      "rotation": 180,
+      "scale": 0.6862745098039217,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0008860294120722756
+    },
+    {
+      "zoom": 1,
+      "rotation": 180,
+      "scale": 1.3725490196078431,
+      "dpr": 2,
+      "offsetDevicePixels": 0.00030273437499772626
+    },
+    {
+      "zoom": 2,
+      "rotation": 180,
+      "scale": 2.7450980392156876,
+      "dpr": 2,
+      "offsetDevicePixels": 0.00845588235051764
+    },
+    {
+      "zoom": 4,
+      "rotation": 180,
+      "scale": 5.490196078431373,
+      "dpr": 2,
+      "offsetDevicePixels": 0.003710937499818101
+    },
+    {
+      "zoom": 0.5,
+      "rotation": 270,
+      "scale": 0.5303030303030304,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0003006480822591584
+    },
+    {
+      "zoom": 1,
+      "rotation": 270,
+      "scale": 1.0606060606060606,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0006012961649730642
+    },
+    {
+      "zoom": 2,
+      "rotation": 270,
+      "scale": 2.121212121212122,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0007974076711434464
+    },
+    {
+      "zoom": 4,
+      "rotation": 270,
+      "scale": 4.242424242424242,
+      "dpr": 2,
+      "offsetDevicePixels": 0.0055948153399185685
+    }
+  ],
+  "layouts": [],
+  "paidModelCalls": 0,
+  "networkRequests": 0,
+  "syntheticOnly": true,
+  "requestedDPR": 2,
+  "dprMethod": "Chromium device metrics emulation in native Electron window"
+}

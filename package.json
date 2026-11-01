@@ -1,0 +1,37 @@
+{
+  "name": "jian",
+  "version": "0.11.1",
+  "description": "Glossleaf · A quiet home for reading and research",
+  "main": "./out/main/index.js",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "scripts/run.sh dev",
+    "build": "electron-vite build",
+    "start": "scripts/run.sh start",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node scripts/test.cjs"
+  },
+  "devDependencies": {
+    "@citation-js/core": "0.7.21",
+    "@citation-js/plugin-bibtex": "0.7.21",
+    "@floating-ui/dom": "1.8.0",
+    "@tanstack/react-virtual": "3.14.23",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "45.1.0",
+    "electron-vite": "6.0.0",
+    "pdfjs-dist": "6.4.299",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "zod": "4.6.7",
+    "zustand": "5.0.16"
+  },
+  "dependencies": {
+    "citeproc": "2.4.63"
+  }
+}

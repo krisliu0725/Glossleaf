@@ -1,0 +1,28 @@
+{
+  "version": "0.4.0",
+  "date": "2026-10-29",
+  "databaseSchema": 3,
+  "checks": {
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "automatedTests": {
+      "passed": 26,
+      "failed": 0
+    },
+    "electronM4Normal": "passed",
+    "electronM4RotateCropbox": "passed",
+    "electronM3GoogleRegression": "passed",
+    "bibtexIndependentParser": "Citation.js 0.7.21 passed",
+    "cslJsonIndependentParser": "Citation.js 0.7.21 passed",
+    "crossrefLivePublicDoi": "passed",
+    "preMigrationSnapshotAndM4BackupRestore": "passed"
+  },
+  "fixtures": "synthetic PDF and fixed DOI responses; live DOI checked separately; no real library or model credentials",
+  "limitations": [
+    "password-protected PDF session unlock not implemented",
+    "no OCR",
+    "no large-real-library performance or full accessibility certification",
+    "no real model quality/fees tested"
+  ],
+  "delivery": "source + prebuilt out; not a signed installer"
+}

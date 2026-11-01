@@ -1,0 +1,20 @@
+/* Isolate document tabs from global action-button rules, especially in the Library shelf. */
+:root .reader-document-tabs .reader-document-tab{min-width:110px;flex-shrink:0;position:relative;transition:background-color 120ms,border-color 120ms}
+:root .reader-document-tabs .reader-document-tab>button{appearance:none;border:0;border-radius:0;background:transparent;box-shadow:none;transform:none;min-width:0}
+:root .reader-document-tabs .reader-document-tab>button.reader-tab-close{display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px;width:24px;min-width:24px;max-width:24px;height:24px;min-height:24px;max-height:24px;padding:5px;margin:0 5px 0 0;border:0;border-radius:3px;background:transparent;box-shadow:none;transform:none;color:var(--text-muted);font-size:12px;line-height:14px}
+:root .reader-document-tabs .reader-document-tab>button.reader-tab-close svg{display:block;flex:none;width:13px;height:13px}
+:root .reader-document-tabs .reader-document-tab>button.reader-tab-close:hover{background:var(--action-hover);color:var(--text-primary)}
+:root .reader-document-tabs .reader-document-tab>button:focus-visible{outline:2px solid var(--jian-teal);outline-offset:-2px}
+:root .reader-document-tabs--compact .reader-document-tab{border-color:transparent;background:transparent;box-shadow:none;min-width:130px;max-width:230px}
+:root .reader-document-tabs--compact .reader-document-tab:hover{background:var(--action-hover)}
+.reader-document-tabs[aria-busy=true] .reader-document-tab[data-selected=true]{border-bottom-color:var(--jian-teal)}
+:root .redesigned-reader,:root .redesigned-reader .reader-side,:root .redesigned-reader .unified-notes,:root .redesigned-reader .note-popover,:root .settings-content,:root .dash-main>.dash-heading,:root .dash-main>.dash-section,:root .dash-main>.dash-metrics{animation:none}
+:root .redesigned-reader .reader__body,:root .redesigned-reader .reader__pane--source{scroll-behavior:auto}
+:root .redesigned-reader .gloss-tabs button,.reader-document-tabs button{transition:background-color 120ms,color 120ms;transform:none}
+.workspace-navigation-error{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:1400;max-width:calc(100vw - 40px);padding:9px 13px;border:1px solid var(--line);border-radius:4px;background:var(--surface-raised);color:var(--text-primary);font:13px/1.7 var(--font-ui)}.workspace-navigation-error button{margin-left:12px;border:0;background:transparent;color:inherit}
+@media(prefers-reduced-motion:reduce){.reader-document-tabs *{transition:none!important}}
+@keyframes quiet-surface-reveal{from{opacity:.86}to{opacity:1}}
+:root .redesigned-reader{animation:quiet-surface-reveal 120ms ease-out}
+@media(prefers-reduced-motion:reduce){:root .redesigned-reader{animation:none}}
+:root .library-reading-shelf .reader-document-tabs--compact .reader-document-tab{flex:0 0 auto;width:clamp(130px,18vw,260px);min-width:130px;max-width:260px}
+.reader-toolband[aria-busy=true]{opacity:.55}

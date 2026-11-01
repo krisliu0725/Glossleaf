@@ -1,0 +1,9 @@
+{
+  "version": "0.11.1",
+  "packaged": true,
+  "coldStart": "PASS",
+  "english": true,
+  "sandbox": true,
+  "contextIsolation": true,
+  "webSecurity": true
+}

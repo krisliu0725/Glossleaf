@@ -1,0 +1,163 @@
+{
+  "realDocument": false,
+  "checks": [
+    "shared 60px shell and fixed action positions",
+    "PDF-only page display and invalid input handling",
+    "outline, thumbnails, bookmarks, single/continuous page and keyboard navigation",
+    "one joined left/right-click selection panel with no duplicate floating menu",
+    "copy and formatted citation, underline, undo/redo",
+    "800ms note autosave and disjoint editor, same review pane",
+    "opening/closing sidebar preserves raster scale including manual zoom",
+    "notes Markdown and five citation formats",
+    "Library remains mounted on return",
+    "narrow bottom editor, English dark header without overlap",
+    "original PDFs unchanged"
+  ],
+  "layouts": [
+    {
+      "header": {
+        "height": 60,
+        "brand": 24,
+        "actions": 1012,
+        "right": "24px",
+        "width": 324,
+        "children": [
+          {
+            "w": 94,
+            "cl": "quiet-menu-anchor"
+          },
+          {
+            "w": 160,
+            "cl": "home-switch"
+          },
+          {
+            "w": 38,
+            "cl": "icon-button app-settings"
+          }
+        ]
+      },
+      "rheader": {
+        "height": 60,
+        "brand": 24,
+        "actions": 1012,
+        "tools": {
+          "x": 0,
+          "y": 60,
+          "width": 1360,
+          "height": 42,
+          "top": 60,
+          "right": 1360,
+          "bottom": 102,
+          "left": 0
+        }
+      }
+    },
+    {
+      "selection": {
+        "panels": 1,
+        "joined": true,
+        "overlap": false,
+        "a": {
+          "x": 323.125,
+          "y": 206.6328125,
+          "width": 349,
+          "height": 245,
+          "top": 206.6328125,
+          "right": 672.125,
+          "bottom": 451.6328125,
+          "left": 323.125
+        },
+        "b": {
+          "x": 323.125,
+          "y": 160.1328125,
+          "width": 522.6550903320312,
+          "height": 38.5,
+          "top": 160.1328125,
+          "right": 845.7800903320312,
+          "bottom": 198.6328125,
+          "left": 323.125
+        }
+      }
+    },
+    {
+      "note": {
+        "overlap": false,
+        "width": 324
+      }
+    },
+    {
+      "narrow": {
+        "drawer": "true",
+        "overlap": false,
+        "a": {
+          "x": 14,
+          "y": 464.484375,
+          "width": 850,
+          "height": 219.890625,
+          "top": 464.484375,
+          "right": 864,
+          "bottom": 684.375,
+          "left": 14
+        },
+        "b": {
+          "x": 0,
+          "y": 102,
+          "width": 900,
+          "height": 351.484375,
+          "top": 102,
+          "right": 900,
+          "bottom": 453.484375,
+          "left": 0
+        }
+      }
+    },
+    {
+      "en": {
+        "overflow": false,
+        "labels": [
+          "Library ",
+          "Export Export",
+          "Library ",
+          "Memoir ",
+          " Settings · ⌘,",
+          " Contents & bookmarks",
+          " Previous page",
+          "2/13 Page navigator",
+          " Next page",
+          " Select text",
+          " Highlight tool",
+          " Underline",
+          " Add a margin note",
+          "Original ",
+          "Parallel ",
+          " Zoom out · ⌘-",
+          "Fit Fit width",
+          " Zoom in · ⌘+",
+          " Rotate pages",
+          " View & paper",
+          "Notes Notes display",
+          " Reading options"
+        ],
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 60,
+          "top": 0,
+          "right": 900,
+          "bottom": 60,
+          "left": 0
+        }
+      }
+    }
+  ],
+  "screens": [
+    "library-zh",
+    "reader-zh",
+    "unified-selection-zh",
+    "note-writing-zh",
+    "note-narrow-zh",
+    "reader-en-dark-900"
+  ],
+  "scope": "Isolated test library; synthetic English and Chinese PDFs; no personal data or paid model calls"
+}

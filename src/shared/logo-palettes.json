@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ink-vermilion",
+    "zh": "墨朱",
+    "en": "Ink & Vermilion",
+    "main": "#22221F",
+    "accent": "#913E32",
+    "darkMain": "#F1EEE6",
+    "darkAccent": "#E8A28F",
+    "desc": "最符合书卷和朱批传统，默认推荐"
+  },
+  {
+    "id": "teal-vermilion",
+    "zh": "青朱",
+    "en": "Teal & Vermilion",
+    "main": "#315A61",
+    "accent": "#A4473B",
+    "darkMain": "#B9DBD7",
+    "darkAccent": "#E8A28F",
+    "desc": "书卷气中带一点现代、清冷的阅读感"
+  },
+  {
+    "id": "ink-ochre",
+    "zh": "墨金",
+    "en": "Ink & Ochre",
+    "main": "#22221F",
+    "accent": "#B78D3B",
+    "darkMain": "#F1EEE6",
+    "darkAccent": "#E5C67A",
+    "desc": "克制沉稳，适合偏学术的气质"
+  },
+  {
+    "id": "tea-vermilion",
+    "zh": "茶朱",
+    "en": "Tea & Vermilion",
+    "main": "#634D3E",
+    "accent": "#A5473B",
+    "darkMain": "#E7D2BB",
+    "darkAccent": "#E8A28F",
+    "desc": "温润、有人文纸本气息"
+  },
+  {
+    "id": "teal-ochre",
+    "zh": "青金",
+    "en": "Teal & Ochre",
+    "main": "#285D57",
+    "accent": "#B58B45",
+    "darkMain": "#B4DCD0",
+    "darkAccent": "#E5C67A",
+    "desc": "偏安静的现代东方审美"
+  },
+  {
+    "id": "vermilion-ink",
+    "zh": "朱墨",
+    "en": "Vermilion & Ink",
+    "main": "#913E32",
+    "accent": "#22221F",
+    "darkMain": "#E8A28F",
+    "darkAccent": "#E9EBE4",
+    "desc": "更鲜明的品牌表达，朱色作为主体"
+  }
+]

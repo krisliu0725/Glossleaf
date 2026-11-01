@@ -1,0 +1,171 @@
+{
+  "textSpans": 16,
+  "gemmaPreset": {
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+    "model": "gemma-4-26b-a4b-it"
+  },
+  "settingsAction": {
+    "top": 678.34375,
+    "bottom": 710.34375,
+    "viewport": 782
+  },
+  "configure": {
+    "ok": true,
+    "data": {
+      "kind": "compatible",
+      "baseUrl": "http://127.0.0.1:64893/v1",
+      "model": "fixture",
+      "targetLanguage": "zh-CN",
+      "consent": true,
+      "hasKey": false
+    }
+  },
+  "modelOptions": [
+    "deepseek-flash",
+    "deepseek-v4-pro",
+    "fixture"
+  ],
+  "draftTest": "测试成功：测试译文：本段用于验证段落对应、文字选择与摘录保存。",
+  "savedCustom": {
+    "ok": true,
+    "data": {
+      "kind": "compatible",
+      "baseUrl": "http://127.0.0.1:64893/v1",
+      "model": "fixture-custom",
+      "targetLanguage": "zh-CN",
+      "consent": true,
+      "hasKey": false
+    }
+  },
+  "selectionGeometry": {
+    "text": "river bank is diff",
+    "rects": [
+      {
+        "x": 115.154541015625,
+        "y": 198.3125,
+        "width": 85.04603576660156,
+        "height": 16.5
+      }
+    ]
+  },
+  "selection": "river bank is diff",
+  "translation": "测试译文：河岸与金融机构意义上的银行并不相同。",
+  "saved": false,
+  "annotations": {
+    "ok": true,
+    "data": [
+      {
+        "id": "2ae1f12d-ddbf-4e10-a41b-7ccd5d599e29",
+        "documentVersionId": "096af71b-2d29-45e8-8bbc-e4fd6149dba1",
+        "type": "excerpt",
+        "quote": "river bank is diff",
+        "comment": "",
+        "color": "#ffd400",
+        "anchors": [
+          {
+            "documentVersionId": "096af71b-2d29-45e8-8bbc-e4fd6149dba1",
+            "pageIndex": 0,
+            "rects": [
+              [
+                61.154541015625,
+                661.1875,
+                146.20057678222656,
+                677.6875
+              ]
+            ],
+            "exact": "river bank is diff"
+          }
+        ],
+        "translation": "测试译文：河岸与金融机构意义上的银行并不相同。",
+        "status": "completed",
+        "createdAt": "2026-10-29T05:49:10.547Z"
+      }
+    ]
+  },
+  "highlight": {
+    "x": 115.1484375,
+    "y": 198.3125,
+    "width": 85.0390625,
+    "height": 16.5,
+    "top": 198.3125,
+    "right": 200.1875,
+    "bottom": 214.8125,
+    "left": 115.1484375
+  },
+  "zoomHighlight": {
+    "x": 176.3046875,
+    "y": 312.625,
+    "width": 170.0859375,
+    "height": 33,
+    "top": 312.625,
+    "right": 346.390625,
+    "bottom": 345.625,
+    "left": 176.3046875
+  },
+  "blocks": 7,
+  "errors": [],
+  "cache": {
+    "ok": true,
+    "data": {
+      "text": "测试译文：本段用于验证段落对应、文字选择与摘录保存。 [12]",
+      "status": "completed",
+      "cached": true,
+      "inputHash": "20c892a76058b686354cb0a41d2c7989ca2f35e3046633c870533a29900b4089",
+      "providerFingerprint": "71e5945fdf1a0140647b141edb846a58a64aa3a0271ccc11a5473d2a80e298e4",
+      "inputSnapshot": "{\"version\":1,\"mode\":\"selection\",\"source\":\"cache fixture [12]\",\"sourceLanguage\":\"auto\",\"targetLanguage\":\"zh-CN\",\"context\":\"cache context\",\"hits\":[],\"slots\":[\"[12]\"],\"providerFingerprint\":\"71e5945fdf1a0140647b141edb846a58a64aa3a0271ccc11a5473d2a80e298e4\",\"provider\":{\"kind\":\"compatible\",\"endpoint\":\"http://127.0.0.1:64893/v1\",\"model\":\"fixture-custom\"},\"promptVersion\":1,\"temperature\":0,\"protocol\":2}"
+    }
+  },
+  "jobs": {
+    "id": "096af71b-2d29-45e8-8bbc-e4fd6149dba1",
+    "job": {
+      "ok": true,
+      "data": "5e0b4dec-17a6-4b6d-a5b0-6a6e28032f4a"
+    }
+  },
+  "jobState": {
+    "ok": true,
+    "data": [
+      {
+        "id": "5e0b4dec-17a6-4b6d-a5b0-6a6e28032f4a",
+        "total": 1,
+        "completed": 1,
+        "failed": 0,
+        "error": null,
+        "status": "completed",
+        "documentVersionId": "096af71b-2d29-45e8-8bbc-e4fd6149dba1"
+      }
+    ]
+  },
+  "afterReload": {
+    "ok": true,
+    "data": [
+      {
+        "id": "2ae1f12d-ddbf-4e10-a41b-7ccd5d599e29",
+        "documentVersionId": "096af71b-2d29-45e8-8bbc-e4fd6149dba1",
+        "type": "excerpt",
+        "quote": "river bank is diff",
+        "comment": "",
+        "color": "#ffd400",
+        "anchors": [
+          {
+            "documentVersionId": "096af71b-2d29-45e8-8bbc-e4fd6149dba1",
+            "pageIndex": 0,
+            "rects": [
+              [
+                61.154541015625,
+                661.1875,
+                146.20057678222656,
+                677.6875
+              ]
+            ],
+            "exact": "river bank is diff"
+          }
+        ],
+        "translation": "测试译文：河岸与金融机构意义上的银行并不相同。",
+        "status": "completed",
+        "createdAt": "2026-10-29T05:49:10.547Z"
+      }
+    ]
+  },
+  "httpCalls": 11
+}

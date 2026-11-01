@@ -1,0 +1,37 @@
+{
+  "version": "0.5.0",
+  "schema": 4,
+  "unitTests": {
+    "passed": 40,
+    "failed": 0
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "dashboard": {
+    "empty": "PASS",
+    "seeded": "PASS",
+    "syntheticFixture": true
+  },
+  "m5": "PASS",
+  "m6": {
+    "state": "experimental",
+    "ordinary": "PASS",
+    "cropBox": "PASS",
+    "rotated": "source fallback PASS",
+    "allFormalGatesComplete": false
+  },
+  "readingIntegration": {
+    "state": "PASS",
+    "focusAndIdleSensors": "controlled for unattended CI",
+    "modalAndMinimize": "native application"
+  },
+  "packagedSmoke": {
+    "platform": "darwin-arm64",
+    "dashboard": "PASS",
+    "importPdfReader": "PASS",
+    "signature": "ad-hoc verified",
+    "notarized": false
+  },
+  "realCloudApiUsed": false,
+  "personalLibraryUsed": false
+}
