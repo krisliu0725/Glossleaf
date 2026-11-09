@@ -5,7 +5,7 @@
 
 macOS（Apple 芯片）与 Windows x64 桌面应用 · Electron + React + TypeScript + PDF.js · 本地优先，不上传任何阅读数据。
 
-[下载 1.1.7](#下载) · [界面](#界面) · [更新日志](docs/CHANGELOG-1.1.x.md) · [文档](#文档)
+[下载 1.1.7](#下载) · [界面](#界面) · [更新日志](docs/CHANGELOG-1.1.x.md) · [文档](#文档) · [许可 MIT](LICENSE)
 
 ---
 
@@ -158,4 +158,6 @@ macOS 包在 Apple 芯片机器上验证了 PDF 导入、扫描页检索、批�
 
 ## 许可
 
-UNLICENSED · 私有项目，未授权分发。第三方组件许可见 [`THIRD_PARTY.md`](THIRD_PARTY.md) 与 `resources/licenses/`。
+[MIT License](LICENSE) © 2026 krisliu0725 —— 可自由使用、修改、分发，保留版权与许可声明即可。
+
+第三方组件沿用各自许可（Electron、PDF.js、霞鹜文楷等），清单见 [`THIRD_PARTY.md`](THIRD_PARTY.md) 与 `resources/licenses/`。安装包按现状提供，不附带担保；Windows 包尚未签名，macOS 包为 ad-hoc 签名。
